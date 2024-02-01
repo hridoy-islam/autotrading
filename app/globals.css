@@ -1,0 +1,107 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+html {
+  font-family: var(--font-nunito);
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+
+  @apply font-nunito;
+}
+.roboinput {
+  @apply border border-primary p-1.5 my-2 rounded-lg;
+}
+.btn-basic {
+  @apply bg-primary text-white;
+}
+@layer base {
+  h2 {
+    @apply font-semibold text-lg;
+  }
+  /* ... */
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 40px white inset !important;
+}
+
+th {
+  @apply p-1 border-b border-stroke;
+}
+td {
+  @apply p-2;
+}
+tr {
+  @apply last:border-b-0 border-b border-stroke;
+}
+.tableHeader {
+  @apply flex justify-between border-b border-stroke;
+}
+
+.productview tr {
+  @apply border-0 !important;
+}
+
+.relative.w-full.inline-flex.tap-highlight-transparent.shadow-sm.px-3.border-medium.border-default-200.data-\[hover\=true\]\:border-default-400.group-data-\[focus\=true\]\:border-default-foreground.min-h-unit-10.rounded-medium.flex-col.items-start.justify-center.gap-0.transition-background.\!duration-150.transition-colors.motion-reduce\:transition-none.h-14.py-2 {
+  border-width: 0px;
+  box-shadow: none;
+}
+.swiper-pagination {
+  position: initial !important;
+  margin-top: 20px;
+}
+.swiper-container {
+  margin-top: 50px;
+  position: relative;
+}
+
+button.absolute.appearance-none.select-none.top-1.right-1.p-2.text-foreground-500.rounded-full.hover\:bg-default-100.active\:bg-default-200.tap-highlight-transparent.outline-none.data-\[focus-visible\=true\]\:z-10.data-\[focus-visible\=true\]\:outline-2.data-\[focus-visible\=true\]\:outline-focus.data-\[focus-visible\=true\]\:outline-offset-2 {
+  display: none;
+}
+.navbar-menu-toggle-icon svg {
+  color: black;
+}
+.homepagebg {
+  background-image: url("../public/homepagebg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.footerbg {
+  background-image: url("../public/footerbg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.liveResultBg {
+  background-image: url("../public/liveresult.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}

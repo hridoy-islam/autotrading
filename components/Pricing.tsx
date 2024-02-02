@@ -7,13 +7,13 @@ export default function Pricing() {
       <div className="container mx-auto grid md:grid-cols-2 sm:grid-cols-1 items-center py-20">
         <div className="space-y-6">
           <Chip className="bg-white rounded-lg">PRICING PLAN</Chip>
-          <h2 className="text-4xl font-semibold">
+          <h2 className="md:text-4xl sm:text-2xl font-semibold">
             Get pricing plans for Hardware & Software Installation for Auto
             Trading Robot.
           </h2>
           <p>One Time Installation & Life Time Benefits.</p>
         </div>
-        <div className="grid grid-cols-2 gap-6 items-center ">
+        <div className="grid md:grid-cols-2 sm:grid-cols-1 sm:mt-4 gap-6 items-center ">
           <Card className="p-6 space-y-4 justify-between">
             <div className="flex items-center gap-4">
               <Icon

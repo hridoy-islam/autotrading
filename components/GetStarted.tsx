@@ -3,7 +3,7 @@ import { Card, Chip } from "@nextui-org/react";
 export default function GetStarted() {
   return (
     <Card className="py-20">
-      <div className="container mx-auto w-6/12 text-center space-y-4">
+      <div className="container mx-auto md:w-6/12 sm:w-10/12 text-center space-y-4">
         <Chip className="rounded-xl">Get Started</Chip>
         <h2 className="text-4xl font-bold">Automatic AI Bot Download</h2>
         <div className="">

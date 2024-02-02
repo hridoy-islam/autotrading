@@ -4,7 +4,7 @@ import { Icon } from "@iconify/react";
 
 export default function Contact() {
   return (
-    <Card className="py-20">
+    <Card className="py-20 rounded-none">
       <div className="container mx-auto grid md:grid-cols-2 sm:grid-cols-1 gap-4">
         <div className="space-y-8 justify-between">
           <Chip className="rounded-xl">Contact us</Chip>

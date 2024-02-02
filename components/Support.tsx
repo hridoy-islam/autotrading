@@ -3,7 +3,7 @@ import { Card, Chip } from "@nextui-org/react";
 
 export default function Support() {
   return (
-    <Card className="py-20">
+    <Card className="py-20 rounded-none">
       <div className="container mx-auto grid md:grid-cols-2 sm:grid-cols-1 gap-8 items-center">
         <div className="space-y-8 justify-between pr-8">
           <Chip className="rounded-xl">Ticket</Chip>

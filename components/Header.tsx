@@ -27,13 +27,12 @@ export default function Header() {
     >
       <NavbarContent justify="start">
         <NavbarMenuToggle
-          icon={<Icon icon="material-symbols:menu" width={24} />}
-          className="sm:hidden"
+          icon={<Icon icon="material-symbols:menu" color="white" width={24} />}
+          className="md:hidden"
         />
-
         <NavbarBrand>
           <Link href={"/"}>
-            <Image src={whitelogo} alt="robofx" />
+            <Image src={whitelogo} alt="robofx" className="w-full h-auto" />
           </Link>
         </NavbarBrand>
       </NavbarContent>

@@ -1,8 +1,39 @@
 "use client";
 import { Card, Chip } from "@nextui-org/react";
 import { Icon } from "@iconify/react";
+import { useForm, SubmitHandler } from "react-hook-form";
+import { useEffect } from "react";
+
+type Inputs = {
+  name: string;
+  phone: string;
+  email: string;
+  message: string;
+};
 
 export default function Contact() {
+  const {
+    register,
+    handleSubmit,
+    reset,
+    formState,
+    formState: { errors, isSubmitSuccessful },
+  } = useForm<Inputs>();
+  const onSubmit: SubmitHandler<Inputs> = async (data) => {
+    await fetch("/api/email", {
+      method: "POST",
+      body: JSON.stringify(data),
+    });
+  };
+
+  useEffect(() => {
+    if (formState.isSubmitSuccessful) {
+      setTimeout(function () {
+        window.location.reload();
+      }, 3000);
+    }
+  }, [formState]);
+
   return (
     <Card className="py-20 rounded-none">
       <div className="container mx-auto grid md:grid-cols-2 sm:grid-cols-1 gap-4">
@@ -30,40 +61,56 @@ export default function Contact() {
         </div>
 
         <div className="">
-          <form className="flex flex-col space-y-4">
+          <form
+            className="flex flex-col space-y-4"
+            onSubmit={handleSubmit(onSubmit)}
+          >
             <input
               type="text"
-              name=""
               id=""
               placeholder="Name *"
               className="border-b border-black py-2 placeholder-black px-1 focus:outline-none"
+              {...register("name", { required: true })}
             />
+            {errors.name && (
+              <span className="text-danger">This field is required</span>
+            )}
             <input
               type="text"
-              name=""
               id=""
               placeholder="Phone *"
               className="border-b border-black py-2 placeholder-black px-1 focus:outline-none"
+              {...register("phone", { required: true })}
             />
+            {errors.phone && (
+              <span className="text-danger">This field is required</span>
+            )}
             <input
               type="text"
-              name=""
               id=""
               placeholder="Email"
               className="border-b border-black py-2 placeholder-black px-1 focus:outline-none"
+              {...register("email", { required: true })}
             />
+            {errors.email && (
+              <span className="text-danger">This field is required</span>
+            )}
             <textarea
-              name=""
               id=""
               placeholder="Message"
               className="border-b border-black py-2 placeholder-black px-1 focus:outline-none"
+              {...register("message", { required: true })}
             ></textarea>
+            {errors.message && (
+              <span className="text-danger">This field is required</span>
+            )}
             <input
               type="submit"
               className="cursor-pointer btn-basic block w-1/3 p-3 rounded-lg"
               value="Submit"
             />
           </form>
+          {formState.isSubmitSuccessful ? "Thank you for contacting us" : ""}
         </div>
       </div>
     </Card>

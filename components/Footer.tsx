@@ -73,13 +73,13 @@ export default function Footer() {
               <li>
                 <Link href={"/"} className="flex items-center gap-2">
                   <Icon icon="solar:phone-linear" />
-                  <span>+ 971 50 820 0684</span>
+                  <span>+971 50 363 0578</span>
                 </Link>
               </li>
               <li>
                 <Link href={"/"} className="flex items-center gap-2">
                   <Icon icon="clarity:envelope-solid" />
-                  <p>uae@autotradesoftware.ae</p>
+                  <p>mailing@robofxtrader.com</p>
                 </Link>
               </li>
             </ul>

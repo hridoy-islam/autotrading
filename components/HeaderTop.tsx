@@ -7,11 +7,11 @@ export default function HeaderTop() {
         <div className="flex gap-4">
           <div className="flex items-center gap-2">
             <Icon icon="solar:phone-linear" />
-            <span>+ 971 50 820 0684</span>
+            <span>+971 50 363 0578</span>
           </div>
           <div className="flex items-center gap-2">
             <Icon icon="clarity:envelope-solid" />
-            <span>setup@robofxtradersoftware.ae</span>
+            <span>mining@robofxtrader.com</span>
           </div>
         </div>
 

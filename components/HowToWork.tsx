@@ -18,11 +18,11 @@ export default function HowToWork() {
             Software Robot Work?
           </h2>
           <p>
-            A Forex Auto Trading Robot that works as a fully Automated Forex
-            Trading System that executes both Buy, Sell Trade Automatically &
-            Close the Trade in Profit. Robo FX Trader Software is programmed to
-            adapt to the current market conditions as it executes trades on both
-            sides of the market 24/7.
+            A Forex Robofx Robot that works as a fully Automated Forex Trading
+            System that executes both Buy, Sell Trade Automatically & Close the
+            Trade in Profit. Robo FX Trader Software is programmed to adapt to
+            the current market conditions as it executes trades on both sides of
+            the market 24/7.
           </p>
           <div className="flex items-center gap-2">
             <Icon icon="mdi:tick-all" className="text-primary" />

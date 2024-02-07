@@ -28,9 +28,7 @@ export default function Features() {
                 alt="one time setup"
                 className="bg-primaryLight p-2 rounded-xl"
               />
-              <h3 className="text-2xl font-semibold">
-                Robo fX Auto Trading EA System
-              </h3>
+              <h3 className="text-2xl font-semibold">Robo fX EA System</h3>
             </div>
             <p>
               The complete Robo FX Trader EA EA ready for quick-installation.
@@ -84,8 +82,8 @@ export default function Features() {
             </div>
             <p>
               As a Robo FX Trader customer you will have access to all future
-              updates to IG Auto Trading EA free of charge. We're giving you all
-              you need to start trading withRobo FX Trader today.
+              updates to IG Robofx EA free of charge. We're giving you all you
+              need to start trading withRobo FX Trader today.
             </p>
           </div>
           <div className="space-y-4 border-2 border-dashed border-stroke rounded-xl p-5">

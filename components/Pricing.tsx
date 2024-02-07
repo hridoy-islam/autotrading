@@ -26,7 +26,7 @@ export default function Pricing() {
 
             <div className="flex items-center gap-2">
               <Icon icon="mdi:tick-all" className="text-primary" />
-              <p>Auto Trading account Setup</p>
+              <p>Robofx account Setup</p>
             </div>
             <div className="flex items-center gap-2">
               <Icon icon="mdi:tick-all" className="text-primary" />
@@ -65,7 +65,7 @@ export default function Pricing() {
             </div>
             <div className="flex items-center gap-2">
               <Icon icon="mdi:tick-all" className="text-primary" />
-              <p>Multiple Auto Trading account Setup</p>
+              <p>Multiple account Setup</p>
             </div>
             <div className="flex items-center gap-2">
               <Icon icon="mdi:tick-all" className="text-primary" />

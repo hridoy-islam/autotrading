@@ -53,7 +53,7 @@ export default function Support() {
 
             <div className="flex gap-2 items-center">
               <Icon icon="ic:baseline-email" className="text-primary text-lg" />
-              <p>mining@robofxtrader.com</p>
+              <p>support@robofxtrader.com</p>
             </div>
           </div>
         </div>

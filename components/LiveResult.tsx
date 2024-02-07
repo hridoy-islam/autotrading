@@ -7,7 +7,7 @@ export default function LiveResult() {
         <div></div>
         <div className="space-y-6">
           <h2 className="text-4xl">
-            Live Daily Results Of Auto Trading <br />{" "}
+            Live Daily Results Of Robofx <br />{" "}
             <span className="text-primary">VERIFIED</span>
           </h2>
           <p className="text-xl">

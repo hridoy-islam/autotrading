@@ -28,16 +28,16 @@ export default function Footer() {
             <h2 className="border-storke border-b-1 pb-2">Company</h2>
             <ul className="space-y-2">
               <li>
-                <Link href={"/"}>Features</Link>
+                <Link href={"/features"}>Features</Link>
               </li>
               <li>
-                <Link href={"/"}>Faq</Link>
+                <Link href={"/faq"}>Faq</Link>
               </li>
               <li>
-                <Link href={"/"}>Pricing</Link>
+                <Link href={"/pricing"}>Pricing</Link>
               </li>
               <li>
-                <Link href={"/"}>Contact</Link>
+                <Link href={"/contact"}>Contact</Link>
               </li>
             </ul>
           </div>
@@ -45,7 +45,7 @@ export default function Footer() {
             <h2 className="border-storke border-b-1 pb-2">Other Links</h2>
             <ul className="space-y-2">
               <li>
-                <Link href={"/"}>Support</Link>
+                <Link href={"/support"}>Support</Link>
               </li>
               <li>
                 <Link href={"/"}>Terms and Conditions</Link>
@@ -65,8 +65,11 @@ export default function Footer() {
                 <div className="flex items-center gap-2">
                   <Icon icon="ph:map-pin" />
                   <p>
-                    Boulevard Plaza Tower <br />1 Downtown Dubai, <br />
-                    United Arab Emirates.
+                    13thStreet, 47 W 13th St
+                    <br />
+                    New York, NY 10011
+                    <br />
+                    USA
                   </p>
                 </div>
               </li>

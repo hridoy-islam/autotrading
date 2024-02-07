@@ -42,7 +42,6 @@ export default function Contact() {
           <h2 className="text-4xl font-bold">Get In Touch With Us</h2>
 
           <div className="space-y-4">
-            <h2 className="text-xl">Visit Our Office</h2>
             <div className="flex gap-2 items-center">
               <Icon icon="carbon:map" className="text-primary text-lg" />
               <p>13thStreet, 47 W 13th St, New York, NY 10011, USA</p>
@@ -51,6 +50,10 @@ export default function Contact() {
             <div className="flex gap-2 items-center">
               <Icon icon="ic:baseline-email" className="text-primary text-lg" />
               <p>mining@robofxtrader.com</p>
+            </div>
+            <div className="flex gap-2 items-center">
+              <Icon icon="ic:baseline-email" className="text-primary text-lg" />
+              <p>support@robofxtrader.com</p>
             </div>
 
             <div className="flex gap-2 items-center">

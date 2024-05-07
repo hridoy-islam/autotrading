@@ -47,19 +47,19 @@ export default function Contact() {
               <p>13thStreet, 47 W 13th St, New York, NY 10011, USA</p>
             </div>
 
-            <div className="flex gap-2 items-center">
+            {/* <div className="flex gap-2 items-center">
               <Icon icon="ic:baseline-email" className="text-primary text-lg" />
               <p>mining@robofxtrader.com</p>
-            </div>
+            </div> */}
             <div className="flex gap-2 items-center">
               <Icon icon="ic:baseline-email" className="text-primary text-lg" />
               <p>support@robofxtrader.com</p>
             </div>
 
-            <div className="flex gap-2 items-center">
+            {/* <div className="flex gap-2 items-center">
               <Icon icon="ep:phone" className="text-primary text-lg" />
               <p>+19292301920</p>
-            </div>
+            </div> */}
           </div>
         </div>
 

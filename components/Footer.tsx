@@ -73,16 +73,16 @@ export default function Footer() {
                   </p>
                 </div>
               </li>
-              <li>
+              {/* <li>
                 <Link href={"/"} className="flex items-center gap-2">
                   <Icon icon="solar:phone-linear" />
                   <span>+971 50 363 0578</span>
                 </Link>
-              </li>
+              </li> */}
               <li>
                 <Link href={"/"} className="flex items-center gap-2">
                   <Icon icon="clarity:envelope-solid" />
-                  <p>mailing@robofxtrader.com</p>
+                  <p>support@robofxtrader.com</p>
                 </Link>
               </li>
             </ul>

@@ -5,13 +5,13 @@ export default function HeaderTop() {
     <div className="bg-headertop text-white p-4 md:block sm:hidden xs:hidden">
       <div className="container mx-auto flex justify-between">
         <div className="flex gap-4">
-          <div className="flex items-center gap-2">
+          {/* <div className="flex items-center gap-2">
             <Icon icon="solar:phone-linear" />
             <span>+971 50 363 0578</span>
-          </div>
+          </div> */}
           <div className="flex items-center gap-2">
             <Icon icon="clarity:envelope-solid" />
-            <span>mining@robofxtrader.com</span>
+            <span>support@robofxtrader.com</span>
           </div>
         </div>
 

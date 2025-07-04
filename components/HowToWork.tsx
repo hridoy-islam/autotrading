@@ -33,16 +33,16 @@ export default function HowToWork() {
               <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
                 How Does{" "}
                 <span className="bg-gradient-to-r from-emerald-400 to-teal-400 bg-clip-text text-transparent">
-                  Robo FX Trading Software
+                  Auto Trade FX Software
                 </span>{" "}
                 Robot Work?
               </h2>
               <p className="text-xl text-slate-300 leading-relaxed mb-8">
-                A Forex Robofx Robot that works as a fully Automated Forex
-                Trading System that executes both Buy, Sell Trade Automatically
-                & Close the Trade in Profit. Robo FX Trader Software is
-                programmed to adapt to the current market conditions as it
-                executes trades on both sides of the market 24/7.
+                A Forex Auto Trade FX Robot that works as a fully Automated
+                Forex Trading System that executes both Buy, Sell Trade
+                Automatically & Close the Trade in Profit. Auto Trade FX
+                Software is programmed to adapt to the current market conditions
+                as it executes trades on both sides of the market 24/7.
               </p>
             </div>
 

@@ -21,10 +21,10 @@ export default function Header() {
           {/* Logo */}
           <div className="flex items-center space-x-2">
             <div className="w-10 h-10 bg-gradient-to-br from-emerald-400 to-teal-500 rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-lg">R</span>
+              <span className="text-white font-bold text-lg">A</span>
             </div>
-            <span className="text-white font-bold text-xl">Robo</span>
-            <span className="text-emerald-400 font-medium">FX TRADER</span>
+            <span className="text-white font-bold text-xl">Auto</span>
+            <span className="text-emerald-400 font-medium">TRADE FX </span>
           </div>
 
           {/* Desktop Navigation */}

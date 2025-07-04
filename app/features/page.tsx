@@ -38,16 +38,16 @@ export default function FeaturesPage() {
   const features = [
     {
       icon: <Bot className="w-8 h-8 text-emerald-400" />,
-      title: "Robo FX EA System",
+      title: "Auto Trade FX EA System",
       description:
-        "The complete Robo FX Trader EA EA ready for quick-installation. Robo FX Trader EA comes with a quick-install wizard that will walk you through the simple install and configuration process. No additional skills, tools, or downloads are required. Just one-click the wizard, and let it do the rest!",
+        "The complete Auto Trade FX Trader EA EA ready for quick-installation. Auto Trade FX EA comes with a quick-install wizard that will walk you through the simple install and configuration process. No additional skills, tools, or downloads are required. Just one-click the wizard, and let it do the rest!",
       gradient: "from-emerald-500/20 to-teal-500/20",
     },
     {
       icon: <BookOpen className="w-8 h-8 text-blue-400" />,
       title: "Quick Strategy Guide",
       description:
-        "We've included a detailed guide that will walk you through the best techniques for setting up and using Robo FX Trader. We'll show you how to maximize the performance of Robo FX Trader with our informative Quick Strategy Guide.",
+        "We've included a detailed guide that will walk you through the best techniques for setting up and using Auto Trade FX. We'll show you how to maximize the performance of Auto Trade FX with our informative Quick Strategy Guide.",
       gradient: "from-blue-500/20 to-cyan-500/20",
     },
     {
@@ -61,28 +61,28 @@ export default function FeaturesPage() {
       icon: <RefreshCw className="w-8 h-8 text-orange-400" />,
       title: "Lifetime Updates",
       description:
-        "As a Robo FX Trader customer you will have access to all future updates to Robofx EA free of charge. We're giving you all you need to start trading withRobo FX Trader today.",
+        "As a Auto Trade FX customer you will have access to all future updates to AutoTradeFx EA free of charge. We're giving you all you need to start trading withAuto Trade FX today.",
       gradient: "from-orange-500/20 to-red-500/20",
     },
     {
       icon: <Target className="w-8 h-8 text-green-400" />,
       title: "Precise and Scientific Trading",
       description:
-        "Robo FX Trader takes human emotion out of the equation. It will flawlessly execute an optimized strategy every second of every session. This is the best way to trade Forex!",
+        "Auto Trade FX takes human emotion out of the equation. It will flawlessly execute an optimized strategy every second of every session. This is the best way to trade Forex!",
       gradient: "from-green-500/20 to-emerald-500/20",
     },
     {
       icon: <BarChart3 className="w-8 h-8 text-indigo-400" />,
       title: "Rapid Market Impulse Trading Levels",
       description:
-        "Robo FX Trader sets your trades to take advantage of market volatility movement. Each trade can be configured based on your trading strategy.",
+        "Auto Trade FX sets your trades to take advantage of market volatility movement. Each trade can be configured based on your trading strategy.",
       gradient: "from-indigo-500/20 to-purple-500/20",
     },
     {
       icon: <DollarSign className="w-8 h-8 text-yellow-400" />,
       title: "Optimal Money-Management",
       description:
-        "Robo FX Trader systematically tracks your open trading positions and closes each out at the optimal profit levels.",
+        "Auto Trade FX systematically tracks your open trading positions and closes each out at the optimal profit levels.",
       gradient: "from-yellow-500/20 to-orange-500/20",
     },
   ];
@@ -94,7 +94,7 @@ export default function FeaturesPage() {
 
       <BreadCumb
         title="Features"
-        subtitle="Discover the powerful features that make Robo FX Trader the ultimate automated trading solution"
+        subtitle="Discover the powerful features that make Auto Trade FX the ultimate automated trading solution"
       />
 
       {/* Features Section */}
@@ -108,7 +108,7 @@ export default function FeaturesPage() {
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
               Features Of{" "}
               <span className="bg-gradient-to-r from-emerald-400 to-teal-400 bg-clip-text text-transparent">
-                Robo FX Trader Software
+                Auto Trade FX Software
               </span>
             </h2>
             <p className="text-xl text-slate-300 max-w-3xl mx-auto leading-relaxed">
@@ -163,8 +163,8 @@ export default function FeaturesPage() {
                 Ready to Experience These Features?
               </h3>
               <p className="text-slate-300 text-lg mb-8 leading-relaxed">
-                Join thousands of successful traders who are already using Robo
-                FX Trader to automate their trading and maximize their profits.
+                Join thousands of successful traders who are already using Auto
+                Trade FX to automate their trading and maximize their profits.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <button className="bg-gradient-to-r from-emerald-500 to-teal-500 hover:from-emerald-600 hover:to-teal-600 text-white font-semibold px-8 py-4 rounded-xl transition-all duration-200 shadow-lg hover:shadow-emerald-500/25 group">

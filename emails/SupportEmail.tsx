@@ -31,7 +31,7 @@ export const SupportEmail = ({
   return (
     <Html>
       <Head />
-      <Preview>RoboFx Trader</Preview>
+      <Preview>Auto Trade FX</Preview>
       <Tailwind
         config={{
           theme: {

@@ -69,10 +69,10 @@ export default function SupportPage() {
                   <div className="flex items-center space-x-2">
                     <Mail className="w-5 h-5 text-emerald-400" />
                     <a
-                      href="mailto:support@robofxtrader.com"
+                      href="mailto:support@autotradefx.net"
                       className="text-emerald-400 hover:text-emerald-300 transition-colors"
                     >
-                      support@robofxtrader.com
+                      support@autotradefx.net
                     </a>
                   </div>
                 </div>

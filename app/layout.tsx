@@ -10,7 +10,7 @@ const nunito = Nunito({
 });
 
 export const metadata: Metadata = {
-  title: "RoboFX Trader",
+  title: "Auto Trade FX",
   description: "The Mining Solutions",
 };
 
@@ -22,7 +22,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${nunito.variable} light`}>
       <head>
-        <title>RoboFx Trader</title>
+        <title>Auto Trade FX</title>
         <link rel="icon" href="/favicon.ico" />
       </head>
       <body>

@@ -10,18 +10,18 @@ export default function Footer() {
           <div className="lg:col-span-2">
             <div className="flex items-center space-x-2 mb-6">
               <div className="w-12 h-12 bg-gradient-to-br from-emerald-400 to-teal-500 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-xl">R</span>
+                <span className="text-white font-bold text-xl">A</span>
               </div>
               <div>
-                <span className="text-white font-bold text-xl">Robo</span>
+                <span className="text-white font-bold text-xl">Auto</span>
                 <div className="text-emerald-400 font-medium text-sm">
-                  FX TRADER
+                  TRADER FX
                 </div>
               </div>
             </div>
 
             <p className="text-slate-300 leading-relaxed mb-6 max-w-md">
-              Robo FX Trader Software website is a software provider company for
+              Auto Trade FX Software website is a software provider company for
               forex trading. Offering automatic robot setup with expert managed
               trading accounts.
             </p>
@@ -132,10 +132,10 @@ export default function Footer() {
                 <div className="flex items-center space-x-2">
                   <Mail className="w-4 h-4 text-emerald-400" />
                   <a
-                    href="mailto:support@robofxtrader.com"
+                    href="mailto:support@autotradefx.net"
                     className="text-slate-300 hover:text-emerald-400 transition-colors text-sm"
                   >
-                    support@robofxtrader.com
+                    support@autotradefx.net
                   </a>
                 </div>
               </div>
@@ -146,7 +146,7 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="border-t border-slate-800 mt-12 pt-8 text-center">
           <p className="text-slate-400 text-sm">
-            Copyrights © 2024 All Rights Reserved by Robo FX Trader Software.
+            Copyrights © 2024 All Rights Reserved by Auto Trade FX Software.
           </p>
         </div>
       </div>

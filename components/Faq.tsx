@@ -10,7 +10,7 @@ export default function Faq() {
       question:
         "What makes this trading robot different from others in the market?",
       answer:
-        "Our Robo FX Trader uses advanced AI algorithms with 12 inner indicators and has been tested for 3 years before public release. It adapts to current market conditions and trades 24/7 with consistent profitability.",
+        "Our Auto Trade FX uses advanced AI algorithms with 12 inner indicators and has been tested for 3 years before public release. It adapts to current market conditions and trades 24/7 with consistent profitability.",
     },
     {
       question: "How energy-efficient is this trading system?",

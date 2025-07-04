@@ -19,7 +19,7 @@ export const ContactEmail = ({ name }: ContactEmailProps) => {
   return (
     <Html>
       <Head />
-      <Preview>Robofx Trader</Preview>
+      <Preview>Auto Trade FX</Preview>
       <Tailwind
         config={{
           theme: {

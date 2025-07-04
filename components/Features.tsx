@@ -15,7 +15,7 @@ export default function Features() {
         <div className="text-center space-y-6">
           <Chip>Features</Chip>
           <h2 className="text-4xl font-bold text-center">
-            Features Of Robo FX Trader Software
+            Features Of Auto Trade FX Software
           </h2>
         </div>
 
@@ -31,8 +31,8 @@ export default function Features() {
               <h3 className="text-2xl font-semibold">Robo fX EA System</h3>
             </div>
             <p>
-              The complete Robo FX Trader EA EA ready for quick-installation.
-              Robo FX Trader EA comes with a quick-install wizard that will walk
+              The complete Auto Trade FX EA EA ready for quick-installation.
+              Auto Trade FX EA comes with a quick-install wizard that will walk
               you through the simple install and configuration process. No
               additional skills, tools, or downloads are required. Just
               double-click the wizard, and let it do the rest!
@@ -49,9 +49,9 @@ export default function Features() {
             </div>
             <p>
               We've included a detailed guide that will walk you through the
-              best techniques for setting up and using Robo FX Trader. We'll
-              show you how to maximize the performance of Robo FX Trader with
-              our informative Quick Strategy Guide
+              best techniques for setting up and using Auto Trade FX. We'll show
+              you how to maximize the performance of Auto Trade FX with our
+              informative Quick Strategy Guide
             </p>
           </div>
           <div className="space-y-4 border-2 border-dashed border-stroke rounded-xl p-5">
@@ -81,9 +81,9 @@ export default function Features() {
               <h3 className="text-2xl font-semibold">Lifetime Updates</h3>
             </div>
             <p>
-              As a Robo FX Trader customer you will have access to all future
+              As a Auto Trade FX customer you will have access to all future
               updates to IG Robofx EA free of charge. We're giving you all you
-              need to start trading withRobo FX Trader today.
+              need to start trading with Auto Trade FX today.
             </p>
           </div>
           <div className="space-y-4 border-2 border-dashed border-stroke rounded-xl p-5">
@@ -98,7 +98,7 @@ export default function Features() {
               </h3>
             </div>
             <p>
-              Robo FX Trader takes human emotion out of the equation. It will
+              Auto Trade FX takes human emotion out of the equation. It will
               flawlessly execute an optimized strategy every second of every
               session. This is the best way to trade Forex!
             </p>
@@ -115,7 +115,7 @@ export default function Features() {
               </h3>
             </div>
             <p>
-              Robo FX Trader sets your trades to take advantage of market
+              Auto Trade FX sets your trades to take advantage of market
               volatility movement. Each trade can be configured based on your
               trading strategy.
             </p>
@@ -132,7 +132,7 @@ export default function Features() {
               </h3>
             </div>
             <p>
-              Robo FX Trader systematically tracks your open trading positions
+              Auto Trade FX systematically tracks your open trading positions
               and closes each out at the optimal profit levels.
             </p>
           </div>

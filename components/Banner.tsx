@@ -35,13 +35,13 @@ export default function Banner() {
                 </span>{" "}
                 with{" "}
                 <span className="bg-gradient-to-r from-emerald-400 to-teal-400 bg-clip-text text-transparent">
-                  Robo FX Trader
+                  Auto Trade FX
                 </span>
               </h1>
               <p className="text-xl text-slate-300 leading-relaxed max-w-2xl">
-                Robo FX Trading Software is programmed to adapt to the current
-                market conditions as it executes trades on both sides of the
-                market 24/7.
+                Auto Trade FX Trading Software is programmed to adapt to the
+                current market conditions as it executes trades on both sides of
+                the market 24/7.
               </p>
             </div>
 
@@ -79,7 +79,7 @@ export default function Banner() {
             <div className="relative z-10">
               <Image
                 src="/robo.png"
-                alt="Robo FX Trader"
+                alt="Auto Trade FX"
                 width={600}
                 height={600}
                 className="w-full h-auto max-w-lg mx-auto drop-shadow-2xl"

@@ -9,14 +9,14 @@ export async function POST(req: Request) {
   await resend.emails.send({
     from: "mailing@robofxtrader.com",
     to: email,
-    subject: "RoboFX Trader",
+    subject: "Auto Trade FX",
     react: ContactEmail({ name }),
   });
 
   await resend.emails.send({
     from: "mailing@robofxtrader.com",
     to: "ahasan2k@gmail.com",
-    subject: "RoboFX Trader",
+    subject: "Auto Trade FX",
     react: GetStartedEmail({
       name,
       email,

@@ -79,7 +79,7 @@ export default function ContactPage() {
                       href="mailto:support@robofxtrader.com"
                       className="text-emerald-400 hover:text-emerald-300 transition-colors"
                     >
-                      support@robofxtrader.com
+                      support@autotradefx.net
                     </a>
                   </div>
                 </div>

@@ -28,7 +28,7 @@ export default function LiveResult() {
                 <p>
                   2020 has been a rollercoaster ride for markets, with plenty of
                   crashes, rallies, insolvencies, and stimulus packages. We are
-                  proud to announce that Robo FX Trader Software market
+                  proud to announce that Auto Trade FX Software market
                   volatility closed every week in profit.
                 </p>
               </div>

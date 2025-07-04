@@ -38,7 +38,7 @@ export default function RobotAnalyze() {
                 </span>
               </h2>
               <p className="text-xl text-slate-300 leading-relaxed mb-8">
-                Buy using the Robo FX Trader Software automatic Robot Software
+                Buy using the Auto Trade FX Software automatic Robot Software
               </p>
             </div>
 

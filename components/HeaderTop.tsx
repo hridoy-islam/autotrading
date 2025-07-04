@@ -8,7 +8,7 @@ export default function HeaderTop() {
         <div className="flex flex-col sm:flex-row justify-between items-center text-sm text-slate-300 space-y-2 sm:space-y-0">
           <div className="flex items-center space-x-2">
             <Mail className="w-4 h-4 text-emerald-400" />
-            <span>support@robofxtrader.com</span>
+            <span>support@autotradefx.net</span>
           </div>
           <div className="flex items-center space-x-2">
             <Clock className="w-4 h-4 text-emerald-400" />

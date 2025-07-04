@@ -1,5 +1,6 @@
 "use client";
 import { Clock, Mail, MapPin } from "lucide-react";
+import Link from "next/link";
 
 export default function Footer() {
   return (
@@ -44,36 +45,36 @@ export default function Footer() {
             <h3 className="text-white font-semibold text-lg mb-6">Company</h3>
             <ul className="space-y-3">
               <li>
-                <a
-                  href="#"
+                <Link
+                  href="features"
                   className="text-slate-300 hover:text-emerald-400 transition-colors"
                 >
                   Features
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#"
+                <Link
+                  href="faq"
                   className="text-slate-300 hover:text-emerald-400 transition-colors"
                 >
                   Faq
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#"
+                <Link
+                  href="pricing"
                   className="text-slate-300 hover:text-emerald-400 transition-colors"
                 >
                   Pricing
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#"
+                <Link
+                  href="contact"
                   className="text-slate-300 hover:text-emerald-400 transition-colors"
                 >
                   Contact
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -85,36 +86,36 @@ export default function Footer() {
             </h3>
             <ul className="space-y-3 mb-6">
               <li>
-                <a
-                  href="#"
+                <Link
+                  href="support"
                   className="text-slate-300 hover:text-emerald-400 transition-colors"
                 >
                   Support
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   href="#"
                   className="text-slate-300 hover:text-emerald-400 transition-colors"
                 >
                   Terms and Conditions
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   href="#"
                   className="text-slate-300 hover:text-emerald-400 transition-colors"
                 >
                   Refund Policy
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   href="#"
                   className="text-slate-300 hover:text-emerald-400 transition-colors"
                 >
                   Privacy and Policy
-                </a>
+                </Link>
               </li>
             </ul>
 

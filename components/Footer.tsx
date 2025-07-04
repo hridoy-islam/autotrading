@@ -125,9 +125,9 @@ export default function Footer() {
                 <div className="flex items-start space-x-2">
                   <MapPin className="w-4 h-4 text-emerald-400 mt-1 flex-shrink-0" />
                   <div className="text-slate-300 text-sm">
-                    <div>13thStreet, 47 W 13th St</div>
-                    <div>New York, NY 10011</div>
-                    <div>USA</div>
+                    <div>Bayswater Tower Marasi Dr </div>
+                    <div>Business Bay - Dubai</div>
+                    <div>UAE</div>
                   </div>
                 </div>
                 <div className="flex items-center space-x-2">

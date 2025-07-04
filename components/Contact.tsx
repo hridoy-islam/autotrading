@@ -44,7 +44,7 @@ export default function Contact() {
           <div className="space-y-4">
             <div className="flex gap-2 items-center">
               <Icon icon="carbon:map" className="text-primary text-lg" />
-              <p>13thStreet, 47 W 13th St, New York, NY 10011, USA</p>
+              <p>Bayswater Tower Marasi Dr - Business Bay - Dubai</p>
             </div>
 
             {/* <div className="flex gap-2 items-center">

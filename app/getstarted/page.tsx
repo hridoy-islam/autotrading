@@ -10,7 +10,10 @@ export default function page() {
     <>
       <HeaderTop />
       <Header />
-      <BreadCumb title="Get Started" />
+      <BreadCumb
+        title="Get Started"
+        subtitle="Launch your automated trading journey in just a few simple steps. Robo FX Trader makes setup fast, intuitive, and hassle-free."
+      />
       <GetStarted />
       <Footer />
     </>

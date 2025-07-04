@@ -4,7 +4,7 @@ import Footer from "@/components/Footer";
 import GetStarted from "@/components/GetStarted";
 import Header from "@/components/Header";
 import HeaderTop from "@/components/HeaderTop";
-
+import LiveResult from "@/components/LiveResult";
 export default function page() {
   return (
     <>
@@ -14,6 +14,7 @@ export default function page() {
         title="Get Started"
         subtitle="Launch your automated trading journey in just a few simple steps. Robo FX Trader makes setup fast, intuitive, and hassle-free."
       />
+      <LiveResult />
       <GetStarted />
       <Footer />
     </>

@@ -1,6 +1,6 @@
 "use client";
 import { Check } from "lucide-react";
-import people from "../public/people.png";
+import people from "../public/people.jpg";
 import Image from "next/image";
 
 export default function HowToWork() {

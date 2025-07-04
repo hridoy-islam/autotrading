@@ -121,7 +121,7 @@ export default function Testimonial() {
         <div className="text-center mt-16">
           <div className="bg-slate-900/50 backdrop-blur-sm border border-slate-700/50 rounded-2xl p-8 max-w-4xl mx-auto">
             <p className="text-lg text-slate-300 mb-4">
-              🌈 <strong>Your Story Awaits:</strong> These are just a few of the
+              <strong>Your Story Awaits:</strong> These are just a few of the
               countless happy stories we've received. Every client's journey
               with our product is unique, but the outcome is consistently joyous
               and successful. We invite you to become part of this thriving

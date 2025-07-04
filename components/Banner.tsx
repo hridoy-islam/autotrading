@@ -70,10 +70,12 @@ export default function Banner() {
                   <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
                 </Button>
               </Link>
-              <Button className="border-2 border-slate-600 hover:border-emerald-400 text-white hover:text-emerald-400 bg-transparent hover:bg-emerald-500/10 font-semibold px-8 py-4 rounded-xl transition-all duration-200 group">
-                <Download className="w-5 h-5 mr-2 group-hover:scale-110 transition-transform" />
-                Download AI Robot
-              </Button>
+              <Link href={"getstarted"}>
+                <Button className="border-2 border-slate-600 hover:border-emerald-400 text-white hover:text-emerald-400 bg-transparent hover:bg-emerald-500/10 font-semibold px-8 py-4 rounded-xl transition-all duration-200 group">
+                  <Download className="w-5 h-5 mr-2 group-hover:scale-110 transition-transform" />
+                  Download AI Robot
+                </Button>
+              </Link>
             </div>
           </div>
 

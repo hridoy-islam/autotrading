@@ -1,5 +1,5 @@
 "use client";
-import { TrendingUp, Shield } from "lucide-react";
+import { TrendingUp, Shield, Link } from "lucide-react";
 import { Button } from "./ui/button";
 
 export default function LiveResult() {
@@ -13,7 +13,7 @@ export default function LiveResult() {
           <div className="space-y-8">
             <div>
               <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-                Live Daily Results Of Robofx{" "}
+                Live Daily Results Of Auto Trade FX{" "}
                 <span className="bg-gradient-to-r from-emerald-400 to-teal-400 bg-clip-text text-transparent">
                   VERIFIED
                 </span>
@@ -36,14 +36,18 @@ export default function LiveResult() {
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <Button className="bg-gradient-to-r from-emerald-500 to-teal-500 hover:from-emerald-600 hover:to-teal-600 text-white font-semibold px-8 py-4 rounded-xl transition-all duration-200 shadow-lg hover:shadow-emerald-500/25 group">
-                <TrendingUp className="w-5 h-5 mr-2 group-hover:scale-110 transition-transform" />
-                Live Result
-              </Button>
+              <Link href="getstarted">
+                <Button className="bg-gradient-to-r from-emerald-500 to-teal-500 hover:from-emerald-600 hover:to-teal-600 text-white font-semibold px-8 py-4 rounded-xl transition-all duration-200 shadow-lg hover:shadow-emerald-500/25 group">
+                  <TrendingUp className="w-5 h-5 mr-2 group-hover:scale-110 transition-transform" />
+                  Live Result
+                </Button>
+              </Link>
 
               <div className="flex items-center space-x-2 text-emerald-400">
                 <Shield className="w-5 h-5" />
-                <span className="font-medium">ROBOFX Verified Account</span>
+                <span className="font-medium">
+                  Auto Trade FX Verified Account
+                </span>
               </div>
             </div>
 

@@ -1,27 +1,9 @@
-// "use client";
-// import BreadCumb from "@/components/BreadCumb";
-// import Features from "@/components/Features";
-// import Footer from "@/components/Footer";
-// import Header from "@/components/Header";
-// import HeaderTop from "@/components/HeaderTop";
-
-// export default function page() {
-//   return (
-//     <>
-//       <HeaderTop />
-//       <Header />
-//       <BreadCumb title="Features" />
-//       <Features />
-//       <Footer />
-//     </>
-//   );
-// }
-
 "use client";
 import BreadCumb from "@/components/BreadCumb";
 import Header from "@/components/Header";
 import HeaderTop from "@/components/HeaderTop";
 import Footer from "@/components/Footer";
+import { Button } from "../../components/ui/button";
 import {
   BookOpen,
   Headphones,
@@ -33,6 +15,7 @@ import {
   Target,
   BarChart3,
 } from "lucide-react";
+import Link from "next/link";
 
 export default function FeaturesPage() {
   const features = [
@@ -167,14 +150,18 @@ export default function FeaturesPage() {
                 Trade FX to automate their trading and maximize their profits.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <button className="bg-gradient-to-r from-emerald-500 to-teal-500 hover:from-emerald-600 hover:to-teal-600 text-white font-semibold px-8 py-4 rounded-xl transition-all duration-200 shadow-lg hover:shadow-emerald-500/25 group">
-                  Get Started Now
-                  <Zap className="w-5 h-5 ml-2 inline group-hover:scale-110 transition-transform" />
-                </button>
-                <button className="border-2 border-slate-600 hover:border-emerald-400 text-white hover:text-emerald-400 bg-transparent hover:bg-emerald-500/10 font-semibold px-8 py-4 rounded-xl transition-all duration-200 group">
-                  <Shield className="w-5 h-5 mr-2 inline group-hover:scale-110 transition-transform" />
-                  View Live Results
-                </button>
+                <Link href="getstarted">
+                  <Button className="bg-gradient-to-r from-emerald-500 to-teal-500 hover:from-emerald-600 hover:to-teal-600 text-white font-semibold px-8 py-4 rounded-xl transition-all duration-200 shadow-lg hover:shadow-emerald-500/25 group">
+                    Get Started Now
+                    <Zap className="w-5 h-5 ml-2 inline group-hover:scale-110 transition-transform" />
+                  </Button>
+                </Link>
+                <Link href="getstarted">
+                  <Button className="border-2 border-slate-600 hover:border-emerald-400 text-white hover:text-emerald-400 bg-transparent hover:bg-emerald-500/10 font-semibold px-8 py-4 rounded-xl transition-all duration-200 group">
+                    <Shield className="w-5 h-5 mr-2 inline group-hover:scale-110 transition-transform" />
+                    View Live Results
+                  </Button>
+                </Link>
               </div>
             </div>
           </div>

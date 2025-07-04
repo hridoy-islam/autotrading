@@ -1,6 +1,7 @@
 "use client";
 import { Check, TrendingUp } from "lucide-react";
 import { Button } from "./ui/button";
+import Link from "next/link";
 
 export default function Pricing() {
   const plans = [
@@ -98,15 +99,17 @@ export default function Pricing() {
               </div>
 
               {/* CTA Button */}
-              <Button
-                className={`w-full py-4 rounded-xl font-semibold transition-all duration-200 ${
-                  plan.popular
-                    ? "bg-gradient-to-r from-emerald-500 to-teal-500 hover:from-emerald-600 hover:to-teal-600 text-white shadow-lg hover:shadow-emerald-500/25"
-                    : "bg-slate-700 hover:bg-slate-600 text-white"
-                }`}
-              >
-                Get Started
-              </Button>
+              <Link href="getstarted">
+                <Button
+                  className={`w-full py-4 rounded-xl font-semibold transition-all duration-200 ${
+                    plan.popular
+                      ? "bg-gradient-to-r from-emerald-500 to-teal-500 hover:from-emerald-600 hover:to-teal-600 text-white shadow-lg hover:shadow-emerald-500/25"
+                      : "bg-slate-700 hover:bg-slate-600 text-white"
+                  }`}
+                >
+                  Get Started
+                </Button>
+              </Link>
             </div>
           ))}
         </div>

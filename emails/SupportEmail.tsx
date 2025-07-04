@@ -73,11 +73,11 @@ export const SupportEmail = ({
             </Section>
             <Section>
               <Text className="text-center text-gray-400">
-                13thStreet, 47 W 13th St, New York, NY 10011, USA
+                Bayswater Tower Marasi Dr - Business Bay - Dubai
               </Text>
               <Text className="text-center text-gray-400">+19292301920</Text>
               <Text className="text-center text-gray-400 mb-3">
-                &copy; 2024 RoboFX All Rights Reserved
+                &copy; 2024 Auto Trade FX All Rights Reserved
               </Text>
             </Section>
           </Container>

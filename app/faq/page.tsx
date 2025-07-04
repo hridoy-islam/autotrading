@@ -10,7 +10,10 @@ export default function page() {
     <div>
       <HeaderTop />
       <Header />
-      <BreadCumb title="FAQ" />
+      <BreadCumb
+        title="FAQ"
+        subtitle="Find quick answers to common questions about Robo FX Trader’s capabilities, setup, and support."
+      />
       <Faq />
       <Footer />
     </div>

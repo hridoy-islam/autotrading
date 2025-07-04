@@ -1,94 +1,85 @@
 "use client";
-
-import {
-  Button,
-  Navbar,
-  NavbarBrand,
-  NavbarContent,
-  NavbarItem,
-  NavbarMenu,
-  NavbarMenuItem,
-  NavbarMenuToggle,
-} from "@nextui-org/react";
-import React from "react";
-import Image from "next/image";
-import Link from "next/link";
-import { Icon } from "@iconify/react/dist/iconify.js";
-import whitelogo from "../public/whitelogo.png";
+import { useState } from "react";
+import { Button } from "@/components/ui/button";
+import { Menu, X } from "lucide-react";
 
 export default function Header() {
-  const menuItems = ["Features", "FAQ", "Pricing", "Support", "Contact"];
-  return (
-    <Navbar
-      className="py-2 container mx-auto bg-transparent"
-      maxWidth="full"
-      position="static"
-      isBlurred={false}
-    >
-      <NavbarContent justify="start">
-        <NavbarMenuToggle
-          icon={<Icon icon="material-symbols:menu" color="white" width={24} />}
-          className="md:hidden"
-        />
-        <NavbarBrand>
-          <Link href={"/"}>
-            <Image src={whitelogo} alt="robofx" className="w-full h-auto" />
-          </Link>
-        </NavbarBrand>
-      </NavbarContent>
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-      <NavbarContent justify="center" className="space-x-6 text-white">
-        <NavbarItem className="hidden lg:flex">
-          <Link href="/">Home</Link>
-        </NavbarItem>
-        <NavbarItem className="hidden lg:flex">
-          <Link href="/features">Features</Link>
-        </NavbarItem>
-        <NavbarItem className="hidden lg:flex">
-          <Link href="/faq">FAQ</Link>
-        </NavbarItem>
-        <NavbarItem className="hidden lg:flex">
-          <Link href="/pricing">Pricing</Link>
-        </NavbarItem>
-        <NavbarItem className="hidden lg:flex">
-          <Link href="/support">Support</Link>
-        </NavbarItem>
-        <NavbarItem className="hidden lg:flex">
-          <Link href="/contact">Contact</Link>
-        </NavbarItem>
-      </NavbarContent>
-      <NavbarContent justify="end">
-        <NavbarItem>
-          <Button
-            as={Link}
-            color="primary"
-            href="/getstarted"
-            variant="flat"
-            className="btn-basic"
+  const navItems = [
+    { name: "Home", href: "/" },
+    { name: "Features", href: "features" },
+    { name: "FAQ", href: "faq" },
+    { name: "Pricing", href: "pricing" },
+    { name: "Support", href: "support" },
+    { name: "Contact", href: "contact" },
+  ];
+  return (
+    <header className="bg-slate-900/95 backdrop-blur-md border-b border-slate-800/50 sticky top-0 z-50">
+      <div className="container mx-auto px-4">
+        <div className="flex items-center justify-between h-16">
+          {/* Logo */}
+          <div className="flex items-center space-x-2">
+            <div className="w-10 h-10 bg-gradient-to-br from-emerald-400 to-teal-500 rounded-lg flex items-center justify-center">
+              <span className="text-white font-bold text-lg">R</span>
+            </div>
+            <span className="text-white font-bold text-xl">Robo</span>
+            <span className="text-emerald-400 font-medium">FX TRADER</span>
+          </div>
+
+          {/* Desktop Navigation */}
+          <nav className="hidden md:flex items-center space-x-8">
+            {navItems.map((item) => (
+              <a
+                key={item.name}
+                href={item.href}
+                className="text-slate-300 hover:text-emerald-400 transition-colors duration-200 font-medium"
+              >
+                {item.name}
+              </a>
+            ))}
+          </nav>
+
+          {/* CTA Button */}
+          <div className="hidden md:block">
+            <Button className="bg-gradient-to-r from-emerald-500 to-teal-500 hover:from-emerald-600 hover:to-teal-600 text-white font-semibold px-6 py-2 rounded-lg transition-all duration-200 shadow-lg hover:shadow-emerald-500/25">
+              Get Started
+            </Button>
+          </div>
+
+          {/* Mobile Menu Button */}
+          <button
+            className="md:hidden text-white"
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
-            Get Started
-          </Button>
-        </NavbarItem>
-      </NavbarContent>
-      <NavbarMenu>
-        {menuItems.map((item, index) => (
-          <NavbarMenuItem key={`${item}-${index}`}>
-            <Link
-              color={
-                index === 2
-                  ? "primary"
-                  : index === menuItems.length - 1
-                  ? "danger"
-                  : "foreground"
-              }
-              className="w-full"
-              href={`/${item.toLowerCase()}`}
-            >
-              {item}
-            </Link>
-          </NavbarMenuItem>
-        ))}
-      </NavbarMenu>
-    </Navbar>
+            {isMenuOpen ? (
+              <X className="w-6 h-6" />
+            ) : (
+              <Menu className="w-6 h-6" />
+            )}
+          </button>
+        </div>
+
+        {/* Mobile Navigation */}
+        {isMenuOpen && (
+          <div className="md:hidden py-4 border-t border-slate-800">
+            <nav className="flex flex-col space-y-4">
+              {navItems.map((item) => (
+                <a
+                  key={item.name}
+                  href={item.href}
+                  className="text-slate-300 hover:text-emerald-400 transition-colors duration-200 font-medium"
+                >
+                  {item.name}
+                </a>
+              ))}
+              <Button className="bg-gradient-to-r from-emerald-500 to-teal-500 hover:from-emerald-600 hover:to-teal-600 text-white font-semibold px-6 py-2 rounded-lg transition-all duration-200 shadow-lg hover:shadow-emerald-500/25 mt-4">
+                Get Started
+              </Button>
+            </nav>
+          </div>
+        )}
+      </div>
+    </header>
   );
 }

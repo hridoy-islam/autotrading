@@ -1,102 +1,98 @@
 "use client";
-import { Accordion, AccordionItem } from "@nextui-org/react";
-import { Icon } from "@iconify/react";
+import { useState } from "react";
+import { ChevronDown } from "lucide-react";
 
 export default function Faq() {
+  const [openIndex, setOpenIndex] = useState<number | null>(null);
+
+  const faqs = [
+    {
+      question:
+        "What makes this trading robot different from others in the market?",
+      answer:
+        "Our Robo FX Trader uses advanced AI algorithms with 12 inner indicators and has been tested for 3 years before public release. It adapts to current market conditions and trades 24/7 with consistent profitability.",
+    },
+    {
+      question: "How energy-efficient is this trading system?",
+      answer:
+        "Our trading system is highly optimized and energy-efficient, designed to run continuously without consuming excessive resources while maintaining peak performance.",
+    },
+    {
+      question: "Is the trading robot suitable for beginners?",
+      answer:
+        "Absolutely! Zero trading knowledge is required. Our team provides complete setup and ongoing support, making it perfect for beginners who want to start automated trading.",
+    },
+    {
+      question: "What security features does the system offer?",
+      answer:
+        "We implement advanced security protocols including encrypted connections, secure API integrations, and dedicated account managers to monitor your trading activities 24/7.",
+    },
+    {
+      question: "Can the robot handle continuous, heavy-duty trading?",
+      answer:
+        "Yes, our robot is designed for continuous operation and can handle multiple trades across various platforms simultaneously without fatigue or performance degradation.",
+    },
+    {
+      question: "What kind of customer support do you offer?",
+      answer:
+        "We provide 24/7 dedicated expert support with day and night shifts. Our team monitors your auto-trading activities and provides lifetime maintenance and support.",
+    },
+    {
+      question:
+        "How does this system contribute to sustainable trading practices?",
+      answer:
+        "Our system eliminates emotional trading, reduces human errors, and uses calculated strategies that contribute to more sustainable and consistent trading practices over time.",
+    },
+  ];
+
   return (
-    <div className="py-10 bg-white">
-      <div className="container mx-auto ">
-        <div className="mb-5 space-y-4">
-          <h2 className="text-center text-primary bg-stroke p-3 w-16 mx-auto rounded-xl">
-            FAQ
-          </h2>
-          <h3 className="text-center md:text-4xl sm:text-2xl">
-            Got Questions? Find Answers Here
-          </h3>
+    <section className="py-20 bg-slate-800/50">
+      <div className="container mx-auto px-4">
+        <div className="max-w-4xl mx-auto">
+          {/* Header */}
+          <div className="text-center mb-16">
+            <div className="inline-flex items-center justify-center bg-slate-700/50 rounded-full px-4 py-2 mb-6">
+              <span className="text-emerald-400 font-medium">FAQ</span>
+            </div>
+            <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
+              Got Questions? Find Answers Here
+            </h2>
+          </div>
+
+          {/* FAQ Items */}
+          <div className="space-y-4">
+            {faqs.map((faq, index) => (
+              <div
+                key={index}
+                className="bg-slate-900/50 backdrop-blur-sm border border-slate-700/50 rounded-xl overflow-hidden"
+              >
+                <button
+                  className="w-full px-8 py-6 text-left flex items-center justify-between hover:bg-slate-800/50 transition-colors"
+                  onClick={() =>
+                    setOpenIndex(openIndex === index ? null : index)
+                  }
+                >
+                  <span className="text-lg font-semibold text-white pr-4">
+                    {faq.question}
+                  </span>
+                  <ChevronDown
+                    className={`w-5 h-5 text-emerald-400 transition-transform ${
+                      openIndex === index ? "rotate-180" : ""
+                    }`}
+                  />
+                </button>
+                {openIndex === index && (
+                  <div className="px-8 pb-6">
+                    <p className="text-slate-300 leading-relaxed">
+                      {faq.answer}
+                    </p>
+                  </div>
+                )}
+              </div>
+            ))}
+          </div>
         </div>
-
-        <Accordion>
-          <AccordionItem
-            key="first"
-            aria-label="first"
-            indicator={<Icon icon="ic:baseline-plus" color="black" />}
-            title="What makes this crypto mining rig different from others in the market?"
-          >
-            🌟 Answer: Our rig stands out due to its unparalleled hash rate
-            performance, energy-efficient operation, and user-friendly
-            interface. It's designed for both efficiency and sustainability,
-            making it a top choice for both experienced miners and beginners.
-          </AccordionItem>
-          <AccordionItem
-            key="second"
-            aria-label="second"
-            indicator={<Icon icon="ic:baseline-plus" color="black" />}
-            title="How energy-efficient is this mining rig?"
-          >
-            💡 Answer: Our rig is one of the most energy-efficient models
-            available today. It reduces power consumption significantly without
-            sacrificing performance, aligning with eco-friendly practices while
-            maximizing your mining profitability.
-          </AccordionItem>
-          <AccordionItem
-            key="third"
-            aria-label="third"
-            indicator={<Icon icon="ic:baseline-plus" color="black" />}
-            title="Is the mining rig suitable for beginners?"
-          >
-            🖥️ Answer: Absolutely! We've designed the interface to be intuitive
-            and user-friendly, ensuring that even those new to crypto mining can
-            set up and start mining with ease.
-          </AccordionItem>
-
-          <AccordionItem
-            key="fourth"
-            aria-label="fourth"
-            indicator={<Icon icon="ic:baseline-plus" color="black" />}
-            title="What security features does the rig offer?"
-          >
-            🔒 Answer: Security is a top priority for us. Our rig includes
-            advanced security protocols to protect your mining operations and
-            digital assets from various online threats, ensuring a safe mining
-            environment.
-          </AccordionItem>
-
-          <AccordionItem
-            key="five"
-            aria-label="five"
-            indicator={<Icon icon="ic:baseline-plus" color="black" />}
-            title="Can the rig handle continuous, heavy-duty mining?"
-          >
-            🚀 Answer: Yes, our rig is built for durability and continuous
-            operation. Its advanced cooling system ensures it stays at optimal
-            temperatures, reducing wear and tear for long-term, heavy-duty
-            mining.
-          </AccordionItem>
-
-          <AccordionItem
-            key="six"
-            aria-label="six"
-            indicator={<Icon icon="ic:baseline-plus" color="black" />}
-            title="What kind of customer support do you offer?"
-          >
-            🌐 Answer: We provide 24/7 customer support with a team of
-            knowledgeable experts ready to assist you with any technical issues
-            or queries you might have. Our goal is to ensure your mining
-            experience is seamless and profitable.
-          </AccordionItem>
-          <AccordionItem
-            key="seven"
-            aria-label="seven"
-            indicator={<Icon icon="ic:baseline-plus" color="black" />}
-            title="How does this rig contribute to a sustainable mining practice?"
-          >
-            💚 Answer: By focusing on energy efficiency and reduced power
-            consumption, our rig not only lowers your electricity costs but also
-            minimizes the environmental impact of crypto mining, contributing to
-            more sustainable practices in the industry.
-          </AccordionItem>
-        </Accordion>
       </div>
-    </div>
+    </section>
   );
 }

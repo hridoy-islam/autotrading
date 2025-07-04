@@ -10,7 +10,10 @@ export default function page() {
     <>
       <HeaderTop />
       <Header />
-      <BreadCumb title="Pricing" />
+      <BreadCumb
+        title="Pricing"
+        subtitle="Choose a plan that suits your trading goals. No hidden fees—just straightforward pricing with powerful"
+      />
       <Pricing />
       <Footer />
     </>

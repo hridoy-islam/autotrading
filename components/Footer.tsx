@@ -1,100 +1,155 @@
 "use client";
-import Link from "next/link";
-import { Icon } from "@iconify/react";
-import Image from "next/image";
-import whitelogo from "../public/whitelogo.png";
+import { Clock, Mail, MapPin } from "lucide-react";
 
 export default function Footer() {
   return (
-    <div className="footerbg p-10 text-white">
-      <div className="container mx-auto">
-        <div className="md:flex sm:flex-row gap-3 justify-between py-8 sm:space-y-6">
-          <div className="md:w-1/2 sm:w-full space-y-4">
-            <Image src={whitelogo} alt="robofx" />
-            <p>
+    <footer className="bg-slate-950 border-t border-slate-800">
+      <div className="container mx-auto px-4 py-16">
+        <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-8">
+          {/* Company Info */}
+          <div className="lg:col-span-2">
+            <div className="flex items-center space-x-2 mb-6">
+              <div className="w-12 h-12 bg-gradient-to-br from-emerald-400 to-teal-500 rounded-lg flex items-center justify-center">
+                <span className="text-white font-bold text-xl">R</span>
+              </div>
+              <div>
+                <span className="text-white font-bold text-xl">Robo</span>
+                <div className="text-emerald-400 font-medium text-sm">
+                  FX TRADER
+                </div>
+              </div>
+            </div>
+
+            <p className="text-slate-300 leading-relaxed mb-6 max-w-md">
               Robo FX Trader Software website is a software provider company for
               forex trading. Offering automatic robot setup with expert managed
               trading accounts.
             </p>
-            <div className="flex items-center gap-4">
-              <Icon icon="tabler:clock" width={28} />
-              <div>
-                <p>Mon - Fri - 09:00AM - 06:00PM </p>
-                <p>Saturday - 09:00AM - 05:00PM</p>
+
+            {/* Business Hours */}
+            <div className="space-y-2">
+              <div className="flex items-center space-x-2 text-slate-300">
+                <Clock className="w-4 h-4 text-emerald-400" />
+                <span className="text-sm">Mon - Fri - 09:00AM - 06:00PM</span>
+              </div>
+              <div className="flex items-center space-x-2 text-slate-300">
+                <Clock className="w-4 h-4 text-emerald-400" />
+                <span className="text-sm">Saturday - 09:00AM - 05:00PM</span>
               </div>
             </div>
           </div>
-          <div className="space-y-2">
-            <h2 className="border-storke border-b-1 pb-2">Company</h2>
-            <ul className="space-y-2">
+
+          {/* Company Links */}
+          <div>
+            <h3 className="text-white font-semibold text-lg mb-6">Company</h3>
+            <ul className="space-y-3">
               <li>
-                <Link href={"/features"}>Features</Link>
+                <a
+                  href="#"
+                  className="text-slate-300 hover:text-emerald-400 transition-colors"
+                >
+                  Features
+                </a>
               </li>
               <li>
-                <Link href={"/faq"}>Faq</Link>
+                <a
+                  href="#"
+                  className="text-slate-300 hover:text-emerald-400 transition-colors"
+                >
+                  Faq
+                </a>
               </li>
               <li>
-                <Link href={"/pricing"}>Pricing</Link>
+                <a
+                  href="#"
+                  className="text-slate-300 hover:text-emerald-400 transition-colors"
+                >
+                  Pricing
+                </a>
               </li>
               <li>
-                <Link href={"/contact"}>Contact</Link>
+                <a
+                  href="#"
+                  className="text-slate-300 hover:text-emerald-400 transition-colors"
+                >
+                  Contact
+                </a>
               </li>
             </ul>
           </div>
-          <div className="space-y-2">
-            <h2 className="border-storke border-b-1 pb-2">Other Links</h2>
-            <ul className="space-y-2">
+
+          {/* Other Links & Contact */}
+          <div>
+            <h3 className="text-white font-semibold text-lg mb-6">
+              Other Links
+            </h3>
+            <ul className="space-y-3 mb-6">
               <li>
-                <Link href={"/support"}>Support</Link>
+                <a
+                  href="#"
+                  className="text-slate-300 hover:text-emerald-400 transition-colors"
+                >
+                  Support
+                </a>
               </li>
               <li>
-                <Link href={"/"}>Terms and Conditions</Link>
+                <a
+                  href="#"
+                  className="text-slate-300 hover:text-emerald-400 transition-colors"
+                >
+                  Terms and Conditions
+                </a>
               </li>
               <li>
-                <Link href={"/"}>Refund Policy</Link>
+                <a
+                  href="#"
+                  className="text-slate-300 hover:text-emerald-400 transition-colors"
+                >
+                  Refund Policy
+                </a>
               </li>
               <li>
-                <Link href={"/"}>Privacy and Policy</Link>
+                <a
+                  href="#"
+                  className="text-slate-300 hover:text-emerald-400 transition-colors"
+                >
+                  Privacy and Policy
+                </a>
               </li>
             </ul>
-          </div>
-          <div className="space-y-2">
-            <h2 className="border-storke border-b-1 pb-2">Contact Us</h2>
-            <ul className="space-y-2">
-              <li>
-                <div className="flex items-center gap-2">
-                  <Icon icon="ph:map-pin" />
-                  <p>
-                    13thStreet, 47 W 13th St
-                    <br />
-                    New York, NY 10011
-                    <br />
-                    USA
-                  </p>
+
+            <div>
+              <h4 className="text-white font-semibold mb-4">Contact Us</h4>
+              <div className="space-y-3">
+                <div className="flex items-start space-x-2">
+                  <MapPin className="w-4 h-4 text-emerald-400 mt-1 flex-shrink-0" />
+                  <div className="text-slate-300 text-sm">
+                    <div>13thStreet, 47 W 13th St</div>
+                    <div>New York, NY 10011</div>
+                    <div>USA</div>
+                  </div>
                 </div>
-              </li>
-              {/* <li>
-                <Link href={"/"} className="flex items-center gap-2">
-                  <Icon icon="solar:phone-linear" />
-                  <span>+971 50 363 0578</span>
-                </Link>
-              </li> */}
-              <li>
-                <Link href={"/"} className="flex items-center gap-2">
-                  <Icon icon="clarity:envelope-solid" />
-                  <p>support@robofxtrader.com</p>
-                </Link>
-              </li>
-            </ul>
+                <div className="flex items-center space-x-2">
+                  <Mail className="w-4 h-4 text-emerald-400" />
+                  <a
+                    href="mailto:support@robofxtrader.com"
+                    className="text-slate-300 hover:text-emerald-400 transition-colors text-sm"
+                  >
+                    support@robofxtrader.com
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
-        <div className="text-center border-stroke border-t-1 pt-3">
-          <p>
+        {/* Bottom Bar */}
+        <div className="border-t border-slate-800 mt-12 pt-8 text-center">
+          <p className="text-slate-400 text-sm">
             Copyrights © 2024 All Rights Reserved by Robo FX Trader Software.
           </p>
         </div>
       </div>
-    </div>
+    </footer>
   );
 }

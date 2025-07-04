@@ -57,7 +57,7 @@ export const ContactEmail = ({ name }: ContactEmailProps) => {
             </Section>
             <Section>
               <Text className="text-center text-gray-400">
-                13thStreet, 47 W 13th St, New York, NY 10011, USA
+                Bayswater Tower Marasi Dr Business Bay - Dubai UAE
               </Text>
               <Text className="text-center text-gray-400">+19292301920</Text>
               <Text className="text-center text-gray-400 mb-3">

@@ -62,9 +62,9 @@ export default function ContactPage() {
                   <div>
                     <h3 className="text-white font-semibold mb-2">Address</h3>
                     <p className="text-slate-300">
-                      13thStreet, 47 W 13th St
+                      Bayswater Tower Marasi Dr Business Bay
                       <br />
-                      New York, NY 10011, USA
+                      Dubai UAE
                     </p>
                   </div>
                 </div>

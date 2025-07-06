@@ -23,7 +23,7 @@ export default function RootLayout({
     <html lang="en" className={`${nunito.variable} light`}>
       <head>
         <title>Auto Trade FX</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.png" />
       </head>
       <body>
         <Providers>{children}</Providers>

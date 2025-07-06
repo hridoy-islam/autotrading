@@ -1,5 +1,6 @@
 "use client";
 import { Clock, Mail, MapPin } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 
 export default function Footer() {
@@ -9,17 +10,8 @@ export default function Footer() {
         <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-8">
           {/* Company Info */}
           <div className="lg:col-span-2">
-            <div className="flex items-center space-x-2 mb-6">
-              <div className="w-12 h-12 bg-gradient-to-br from-emerald-400 to-teal-500 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-xl">A</span>
-              </div>
-              <div>
-                <span className="text-white font-bold text-xl">Auto</span>
-                <div className="text-emerald-400 font-medium text-sm">
-                  TRADER FX
-                </div>
-              </div>
-            </div>
+            <Image src="/logo.png" alt="logo" width={300} height={200} />
+            <div className="flex items-center space-x-2 mb-6"></div>
 
             <p className="text-slate-300 leading-relaxed mb-6 max-w-md">
               Auto Trade FX Software website is a software provider company for

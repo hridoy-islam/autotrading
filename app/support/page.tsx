@@ -11,6 +11,7 @@ import {
   MessageSquare,
   Clock,
   Headset,
+  Phone,
 } from "lucide-react";
 
 export default function SupportPage() {
@@ -64,6 +65,17 @@ export default function SupportPage() {
                       className="text-emerald-400 hover:text-emerald-300 transition-colors"
                     >
                       support@autotradefx.net
+                    </a>
+                  </div>
+                </div>
+                <div className="border-t border-slate-700 pt-6">
+                  <h4 className="text-lg font-semibold text-white mb-4">
+                    Phone
+                  </h4>
+                  <div className="flex items-center space-x-2">
+                    <Phone className="w-5 h-5 text-emerald-400" />
+                    <a className="text-emerald-400 hover:text-emerald-300 transition-colors">
+                      +971 52 840 4824
                     </a>
                   </div>
                 </div>

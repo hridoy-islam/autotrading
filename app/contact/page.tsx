@@ -24,7 +24,14 @@ import Header from "@/components/Header";
 import HeaderTop from "@/components/HeaderTop";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
-import { MapPin, Mail, Clock, HeadphoneOff, Headphones } from "lucide-react";
+import {
+  MapPin,
+  Mail,
+  Clock,
+  HeadphoneOff,
+  Headphones,
+  Phone,
+} from "lucide-react";
 
 export default function ContactPage() {
   return (
@@ -90,6 +97,17 @@ export default function ContactPage() {
                     </a>
                   </div>
                 </div>
+                <div className="flex items-start space-x-4">
+                  <div className="w-12 h-12 bg-emerald-500/20 rounded-xl flex items-center justify-center flex-shrink-0">
+                    <Phone className="w-6 h-6 text-emerald-400" />
+                  </div>
+                  <div>
+                    <h3 className="text-white font-semibold mb-2">Phone</h3>
+                    <a className="text-emerald-400 hover:text-emerald-300 transition-colors">
+                      +971 52 840 4824
+                    </a>
+                  </div>
+                </div>
 
                 <div className="flex items-start space-x-4">
                   <div className="w-12 h-12 bg-emerald-500/20 rounded-xl flex items-center justify-center flex-shrink-0">
@@ -100,8 +118,8 @@ export default function ContactPage() {
                       Business Hours
                     </h3>
                     <div className="text-slate-300 space-y-1">
-                      <p>Mon - Fri: 09:00AM - 06:00PM</p>
-                      <p>Saturday: 09:00AM - 05:00PM</p>
+                      <p>Mon - Fri: 10:00AM - 06:00PM</p>
+                      <p>Saturday: 10:00AM - 05:00PM</p>
                       <p>Sunday : Closed</p>
                     </div>
                   </div>

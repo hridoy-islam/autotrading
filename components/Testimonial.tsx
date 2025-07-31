@@ -30,6 +30,30 @@ export default function Testimonial() {
         "Stress-free trading and reliable performance. I’m finally seeing stable returns.",
       icon: "🔒",
     },
+    {
+      name: "Carlos M.",
+      role: "Retired Engineer",
+      image: "/placeholder.svg?height=60&width=60",
+      quote:
+        "I never thought I’d understand trading. This system made it easy, and I’m earning more than I expected.",
+      icon: "📈",
+    },
+    {
+      name: "Fatima A.",
+      role: "Freelancer",
+      image: "/placeholder.svg?height=60&width=60",
+      quote:
+        "Flexible, hands-free income while I focus on my clients. It’s a total win.",
+      icon: "🎯",
+    },
+    {
+      name: "Jason T.",
+      role: "College Student",
+      image: "/placeholder.svg?height=60&width=60",
+      quote:
+        "I set it up between classes. It’s the easiest way I’ve found to grow my savings.",
+      icon: "🎓",
+    },
   ];
 
   const nextSlide = () => {

@@ -1,6 +1,7 @@
 "use client";
 import { MapPin, ArrowRight, Building2, Users, Globe } from "lucide-react";
 import Image from "next/image";
+import { Button } from "./ui/button";
 
 export default function OfficeLocations() {
   const locations = [
@@ -54,7 +55,7 @@ export default function OfficeLocations() {
             <div className="inline-flex items-center justify-center bg-slate-700/50 rounded-full px-4 py-2 mb-6">
               <Globe className="w-4 h-4 text-emerald-400 mr-2" />
               <span className="text-emerald-400 font-medium">
-                Global Presence
+                Our Global Presence
               </span>
             </div>
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
@@ -64,8 +65,8 @@ export default function OfficeLocations() {
               </span>
             </h2>
             <p className="text-xl text-slate-300 leading-relaxed max-w-2xl">
-              Find your location and get the software for yourself. Our global
-              presence ensures local support and expertise.
+              Looking for local setup and support? We’ve got offices and
+              partners ready to help you in
             </p>
           </div>
 
@@ -191,14 +192,14 @@ export default function OfficeLocations() {
               24/7 support in your timezone.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="bg-gradient-to-r from-emerald-500 to-teal-500 hover:from-emerald-600 hover:to-teal-600 text-white font-semibold px-8 py-4 rounded-xl transition-all duration-200 shadow-lg hover:shadow-emerald-500/25 group">
+              <Button className="bg-gradient-to-r from-emerald-500 to-teal-500 hover:from-emerald-600 hover:to-teal-600 text-white font-semibold px-8 py-4 rounded-xl transition-all duration-200 shadow-lg hover:shadow-emerald-500/25 group">
                 <Users className="w-5 h-5 mr-2 inline group-hover:scale-110 transition-transform" />
-                Contact Global Support
-              </button>
-              <button className="border-2 border-slate-600 hover:border-emerald-400 text-white hover:text-emerald-400 bg-transparent hover:bg-emerald-500/10 font-semibold px-8 py-4 rounded-xl transition-all duration-200 group">
+                Get Support
+              </Button>
+              <Button className="border-2 border-slate-600 hover:border-emerald-400 text-white hover:text-emerald-400 bg-transparent hover:bg-emerald-500/10 font-semibold px-8 py-4 rounded-xl transition-all duration-200 group">
                 <MapPin className="w-5 h-5 mr-2 inline group-hover:scale-110 transition-transform" />
-                Find Nearest Office
-              </button>
+                Locate Office
+              </Button>
             </div>
           </div>
         </div>

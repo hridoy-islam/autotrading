@@ -6,30 +6,27 @@ import Link from "next/link";
 export default function Pricing() {
   const plans = [
     {
-      title: "Price Discussion",
+      title: "Basic Setup",
       icon: <TrendingUp className="w-6 h-6 text-emerald-400" />,
       features: [
-        "Robofx account Setup",
-        "Trader Account Setup",
-        "VPS Server Setup",
-        "Dedicated Account Manager",
-        "24/7 Account Monitor",
-        "Life Time Maintenance & Support",
+        "Trading Robot Installation",
+        "Broker Account Configuration",
+        "️VPS Integration",
+        "Lifetime Software Access",
+        "24/7 Monitoring",
       ],
       popular: false,
     },
     {
-      title: "Price Discussion",
+      title: "Premium Plan",
       icon: <TrendingUp className="w-6 h-6 text-emerald-400" />,
       features: [
         "Multiple account Setup",
-        "Trader Account Setup",
-        "VPS Server Setup",
-        "Free Buy & Sell Indicator",
-        "Free Signals",
+        "Buy & Sell Indicator",
         "Dedicated Account Manager",
-        "24/7 Account Monitor",
-        "Life Time Maintenance & Support",
+        "Free Trading Signals",
+        "Full VPS & Broker Support",
+        "Lifetime Updates & Help",
       ],
       popular: true,
     },
@@ -41,18 +38,16 @@ export default function Pricing() {
         {/* Header */}
         <div className="text-center mb-16">
           <div className="inline-flex items-center justify-center bg-slate-700/50 rounded-full px-4 py-2 mb-6">
-            <span className="text-emerald-400 font-medium">PRICING PLAN</span>
+            <span className="text-emerald-400 font-medium">
+              Plans & Pricing
+            </span>
           </div>
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
-            Get pricing plans for Hardware &{" "}
+            Simple, One-Time Setup.{" "}
             <span className="bg-gradient-to-r from-emerald-400 to-teal-400 bg-clip-text text-transparent">
-              Software Installation
+              Lifetime Value.
             </span>{" "}
-            for Auto Trading Robot.
           </h2>
-          <p className="text-xl text-slate-300 max-w-2xl mx-auto">
-            One Time Installation & Life Time Benefits.
-          </p>
         </div>
 
         {/* Pricing Cards */}
@@ -107,7 +102,7 @@ export default function Pricing() {
                       : "bg-slate-700 hover:bg-slate-600 text-white"
                   }`}
                 >
-                  Get Started
+                  Choose My Plan
                 </Button>
               </Link>
             </div>

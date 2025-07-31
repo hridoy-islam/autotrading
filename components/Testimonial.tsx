@@ -7,27 +7,27 @@ export default function Testimonial() {
 
   const testimonials = [
     {
-      name: "Mahmudul Hasan",
-      role: "Forex Trader",
+      name: "Hasan R.",
+      role: "Beginner Trader",
       image: "/placeholder.svg?height=60&width=60",
       quote:
-        "Beyond Expectations!! - I was skeptical at first, but this robot has surpassed all my expectations. The energy efficiency and sleek design have made trading both cost-effective and enjoyable. A big thumbs up!",
+        "I’ve never seen anything this easy. I check my phone, and I see profits. Simple as that.",
       icon: "💰",
     },
     {
-      name: "Vikram Singh",
-      role: "Professional Trader",
+      name: "Vikram S.",
+      role: "Investment Consultant",
       image: "/placeholder.svg?height=60&width=60",
       quote:
-        "Trading Made Simple and Rewarding! - As someone who's constantly on the move, I needed a trading solution that was compact and easy to manage. This robot delivered that and more. It's like having a reliable trading companion wherever I go.",
+        "As a full-time professional, I don’t have time to watch charts all day. This robot changed the game for me.",
       icon: "🌐",
     },
     {
-      name: "Neha Patel",
-      role: "Investment Analyst",
+      name: "Neha P.",
+      role: "Analyst",
       image: "/placeholder.svg?height=60&width=60",
       quote:
-        "Security and Performance in One! - The advanced security features give me peace of mind, knowing my trading activities are safe. Coupled with its high performance, this robot is truly a stellar investment.",
+        "Stress-free trading and reliable performance. I’m finally seeing stable returns.",
       icon: "🔒",
     },
   ];
@@ -53,17 +53,13 @@ export default function Testimonial() {
             </span>
           </div>
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
-            A Glimpse into Happy{" "}
+            Client Success{" "}
             <span className="bg-gradient-to-r from-emerald-400 to-teal-400 bg-clip-text text-transparent">
-              Clients' Experiences
+              Stories
             </span>
           </h2>
           <p className="text-lg text-slate-300 max-w-4xl mx-auto">
-            ⭐ Join the Journey of Joy and Triumph: As you explore the
-            remarkable experiences of our valued clients, immerse yourself in
-            their stories of delight and achievement. Each testimonial is a
-            testament to the transformative power of our product, showcasing
-            real-world impacts and the joy it brings to users.
+            Real Traders. Real Results.
           </p>
         </div>
 

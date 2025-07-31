@@ -6,7 +6,6 @@ import Footer from "@/components/Footer";
 import { Button } from "../../components/ui/button";
 import {
   BookOpen,
-  Headphones,
   RefreshCw,
   Zap,
   DollarSign,
@@ -14,6 +13,11 @@ import {
   Shield,
   Target,
   BarChart3,
+  TrendingUp,
+  Brain,
+  Lightbulb,
+  RefreshCcw,
+  BellRing,
 } from "lucide-react";
 import Link from "next/link";
 
@@ -21,52 +25,59 @@ export default function FeaturesPage() {
   const features = [
     {
       icon: <Bot className="w-8 h-8 text-emerald-400" />,
-      title: "Auto Trade FX EA System",
+      title: "One-Click Smart Setup",
       description:
-        "The complete Auto Trade FX Trader EA EA ready for quick-installation. Auto Trade FX EA comes with a quick-install wizard that will walk you through the simple install and configuration process. No additional skills, tools, or downloads are required. Just one-click the wizard, and let it do the rest!",
+        "Forget complicated installations. Our intelligent setup wizard configures everything with just one click — no coding, no tech headaches.",
       gradient: "from-emerald-500/20 to-teal-500/20",
     },
     {
       icon: <BookOpen className="w-8 h-8 text-blue-400" />,
-      title: "Quick Strategy Guide",
+      title: "Easy-to-Follow Strategy Guide",
       description:
-        "We've included a detailed guide that will walk you through the best techniques for setting up and using Auto Trade FX. We'll show you how to maximize the performance of Auto Trade FX with our informative Quick Strategy Guide.",
+        "Get instant access to a step-by-step guide that helps you start strong. Whether you’re a beginner or seasoned trader, you’ll learn how to maximize the robot’s full potential.",
       gradient: "from-blue-500/20 to-cyan-500/20",
     },
     {
-      icon: <Headphones className="w-8 h-8 text-purple-400" />,
-      title: "24/7 Quick Response Support",
+      icon: <Brain className="w-8 h-8 text-purple-400" />,
+      title: "Emotionless AI Trading",
       description:
-        "Our support desk is open 24/7 to answer your questions. We pride ourselves on rapid follow-up often answering questions within one business day.",
+        "No fear. No greed. Just logic. Auto Trade FX trades with complete objectivity, making decisions based on live data—not emotions.",
       gradient: "from-purple-500/20 to-pink-500/20",
     },
     {
-      icon: <RefreshCw className="w-8 h-8 text-orange-400" />,
-      title: "Lifetime Updates",
+      icon: <BarChart3 className="w-8 h-8 text-orange-400" />,
+      title: "Precision-Driven Market Scans",
       description:
-        "As a Auto Trade FX customer you will have access to all future updates to AutoTradeFx EA free of charge. We're giving you all you need to start trading withAuto Trade FX today.",
+        "Every second, the software scans the markets using adaptive algorithms to catch profitable trades based on micro-movements and volatility.",
       gradient: "from-orange-500/20 to-red-500/20",
     },
     {
-      icon: <Target className="w-8 h-8 text-green-400" />,
-      title: "Precise and Scientific Trading",
+      icon: <Lightbulb className="w-8 h-8 text-green-400" />,
+      title: "Dynamic Trade Execution",
       description:
-        "Auto Trade FX takes human emotion out of the equation. It will flawlessly execute an optimized strategy every second of every session. This is the best way to trade Forex!",
+        "From entry to exit, the system adjusts in real time to market conditions. It adapts strategies on the fly to lock in better profits and reduce losses.",
       gradient: "from-green-500/20 to-emerald-500/20",
     },
     {
-      icon: <BarChart3 className="w-8 h-8 text-indigo-400" />,
-      title: "Rapid Market Impulse Trading Levels",
+      icon: <RefreshCcw className="w-8 h-8 text-indigo-400" />,
+      title: "Lifetime Software Updates",
       description:
-        "Auto Trade FX sets your trades to take advantage of market volatility movement. Each trade can be configured based on your trading strategy.",
+        "Enjoy free lifetime updates. As our AI evolves, you’ll get every new feature, fix, and optimization — no extra cost, ever.",
       gradient: "from-indigo-500/20 to-purple-500/20",
     },
     {
       icon: <DollarSign className="w-8 h-8 text-yellow-400" />,
-      title: "Optimal Money-Management",
+      title: "Automated Profit Protection",
       description:
-        "Auto Trade FX systematically tracks your open trading positions and closes each out at the optimal profit levels.",
+        "The system closes your positions at optimal moments. Built-in money management ensures smart scaling and protects your gains from sudden reversals.",
       gradient: "from-yellow-500/20 to-orange-500/20",
+    },
+    {
+      icon: <BellRing className="w-8 h-8 text-emerald-400" />,
+      title: "24/7 Priority Support",
+      description:
+        "Our dedicated support team is available day and night. Whether you need setup help or trading advice, we’re here — fast, friendly, and always human.",
+      gradient: "from-emerald-500/20 to-teal-500/20",
     },
   ];
 
@@ -86,18 +97,20 @@ export default function FeaturesPage() {
           {/* Section Header */}
           <div className="text-center mb-16">
             <div className="inline-flex items-center justify-center bg-slate-700/50 rounded-full px-4 py-2 mb-6">
-              <span className="text-emerald-400 font-medium">Features</span>
+              <span className="text-emerald-400 font-medium">
+                Key Features of Auto Trade FX
+              </span>
             </div>
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
-              Features Of{" "}
+              Built to Perform. Designed <br />
               <span className="bg-gradient-to-r from-emerald-400 to-teal-400 bg-clip-text text-transparent">
-                Auto Trade FX Software
+                for Simplicity. Backed by AI.
               </span>
             </h2>
             <p className="text-xl text-slate-300 max-w-3xl mx-auto leading-relaxed">
-              Experience the power of advanced AI-driven trading with our
-              comprehensive suite of features designed to maximize your trading
-              success.
+              Auto Trade FX isn’t just another trading tool — it’s your 24/7
+              trading partner that thinks, acts, and profits like a seasoned
+              expert. Here’s what sets it apart:
             </p>
           </div>
 
@@ -143,11 +156,12 @@ export default function FeaturesPage() {
           <div className="text-center mt-16">
             <div className="bg-slate-800/50 backdrop-blur-sm border border-slate-700/50 rounded-2xl p-8 max-w-4xl mx-auto">
               <h3 className="text-3xl font-bold text-white mb-4">
-                Ready to Experience These Features?
+                Ready to Trade the Smart Way?
               </h3>
               <p className="text-slate-300 text-lg mb-8 leading-relaxed">
-                Join thousands of successful traders who are already using Auto
-                Trade FX to automate their trading and maximize their profits.
+                Join thousands of users who rely on Auto Trade FX to automate
+                their success. Whether you’re new to trading or scaling up, the
+                future of forex is one click away.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link href="getstarted">

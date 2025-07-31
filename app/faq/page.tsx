@@ -12,7 +12,7 @@ export default function page() {
       <Header />
       <BreadCumb
         title="FAQ"
-        subtitle="Find quick answers to common questions about Auto Trade FX’s capabilities, setup, and support."
+        subtitle="Everything You Want to Know About Auto Trade FX — Answered."
       />
       <Faq />
       <Footer />

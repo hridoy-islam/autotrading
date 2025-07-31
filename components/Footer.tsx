@@ -14,9 +14,11 @@ export default function Footer() {
             <div className="flex items-center space-x-2 mb-6"></div>
 
             <p className="text-slate-300 leading-relaxed mb-6 max-w-md">
-              Auto Trade FX Software website is a software provider company for
-              forex trading. Offering automatic robot setup with expert managed
-              trading accounts.
+              Auto Trade FX is a next-generation trading automation company
+              helping individuals and professionals tap into the forex market
+              without the stress, time commitment, or learning curve. We believe
+              smart trading should be accessible to everyone—with safety,
+              simplicity, and transparency at its core.
             </p>
 
             {/* Business Hours */}
@@ -117,7 +119,7 @@ export default function Footer() {
                 <div className="flex items-start space-x-2">
                   <MapPin className="w-4 h-4 text-emerald-400 mt-1 flex-shrink-0" />
                   <div className="text-slate-300 text-sm">
-                    <div>Bayswater Tower Marasi Dr </div>
+                    <div>Bayswater Tower </div>
                     <div>Business Bay - Dubai</div>
                     <div>UAE</div>
                   </div>

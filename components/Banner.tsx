@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import { ArrowRight, Download, TrendingUp, Zap } from "lucide-react";
+import { ArrowRight, Download, Globe, TrendingUp, Zap } from "lucide-react";
 import { Button } from "./ui/button";
 import Link from "next/link";
 
@@ -30,9 +30,9 @@ export default function Banner() {
             {/* Headline */}
             <div className="space-y-4">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight">
-                Supercharge your{" "}
+                Trade Smarter{" "}
                 <span className="bg-gradient-to-r from-emerald-400 to-teal-400 bg-clip-text text-transparent">
-                  trading journey
+                  Not Harder
                 </span>{" "}
                 with{" "}
                 <span className="bg-gradient-to-r from-emerald-400 to-teal-400 bg-clip-text text-transparent">
@@ -40,9 +40,9 @@ export default function Banner() {
                 </span>
               </h1>
               <p className="text-xl text-slate-300 leading-relaxed max-w-2xl">
-                Auto Trade FX Trading Software is programmed to adapt to the
-                current market conditions as it executes trades on both sides of
-                the market 24/7.
+                Experience fully automated forex trading powered by advanced AI.
+                No more guesswork, no missed opportunities. Just hands-free
+                profits 24/7.
               </p>
             </div>
 
@@ -50,15 +50,15 @@ export default function Banner() {
             <div className="flex flex-wrap gap-4 text-sm text-slate-300">
               <div className="flex items-center space-x-2">
                 <TrendingUp className="w-4 h-4 text-emerald-400" />
-                <span>24/7 Trading</span>
+                <span>One-Time Setup</span>
               </div>
               <div className="flex items-center space-x-2">
                 <Zap className="w-4 h-4 text-emerald-400" />
-                <span>AI-Powered</span>
+                <span>AI-Driven Decisions</span>
               </div>
               <div className="flex items-center space-x-2">
-                <TrendingUp className="w-4 h-4 text-emerald-400" />
-                <span>Market Adaptive</span>
+                <Globe className="w-4 h-4 text-emerald-400" />
+                <span>Global Support</span>
               </div>
             </div>
 
@@ -66,14 +66,14 @@ export default function Banner() {
             <div className="flex flex-col sm:flex-row gap-4">
               <Link href={"getstarted"}>
                 <Button className="bg-gradient-to-r from-emerald-500 to-teal-500 hover:from-emerald-600 hover:to-teal-600 text-white font-semibold px-8 py-4 rounded-xl transition-all duration-200 shadow-lg hover:shadow-emerald-500/25 group">
-                  Get Started
+                  Start Trading Today
                   <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
                 </Button>
               </Link>
               <Link href={"getstarted"}>
                 <Button className="border-2 border-slate-600 hover:border-emerald-400 text-white hover:text-emerald-400 bg-transparent hover:bg-emerald-500/10 font-semibold px-8 py-4 rounded-xl transition-all duration-200 group">
                   <Download className="w-5 h-5 mr-2 group-hover:scale-110 transition-transform" />
-                  Download AI Robot
+                  Download AI Software
                 </Button>
               </Link>
             </div>

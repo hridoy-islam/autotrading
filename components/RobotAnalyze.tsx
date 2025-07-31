@@ -5,18 +5,17 @@ import liveresult from "../public/liveresult.jpg";
 
 export default function RobotAnalyze() {
   const features = [
-    "Robots can trade far more effectively and efficiently than any human",
-    "Monitoring multiple trades, across multiple platforms simultaneously",
-    "Consistent trading - robots always adhere to the rules you set for the",
-    "Order entry achieved in seconds",
-    "Instant reaction to stock market fluctuations",
-    "Completely unemotional trading",
-    "Trading when you can't be online. You sleep, the robot carries on trading",
-    "Using a robot that is pre-programmed with specific trading system rules",
-    "Automated robots have more capacity to process data than a human being",
-    "Robots are not scared to take the risk that you might not want to make",
-    "No instinctive or impulsive trading, everything is calculated",
-    "Ability to back test to see the accuracy of the robot trader",
+    "New to Forex? We’ve got you covered.",
+    "Don’t have time to trade? Let the robot work for you.",
+    "Want consistent performance? We’re backed by years of strategy testing.",
+    "Need security? All trades are protected by smart algorithms and monitored 24/7.",
+  ];
+  const differences = [
+    "No emotions, no fatigue — just smart, calculated trading",
+    "Backed by 3+ years of live data and performance testing",
+    "AI reacts in milliseconds — faster than any manual trading",
+    "No martingale. No gimmicks. Just real results.",
+    "Full transparency and support — we never leave you in the dark",
   ];
 
   return (
@@ -25,25 +24,11 @@ export default function RobotAnalyze() {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Content */}
           <div className="space-y-8">
-            <div>
-              <div className="inline-flex items-center justify-center bg-slate-700/50 rounded-full px-4 py-2 mb-6">
-                <span className="text-emerald-400 font-medium">
-                  Auto Analyze
-                </span>
-              </div>
-              <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-                Robot Will Analyze The Chart Automatically &{" "}
-                <span className="bg-gradient-to-r from-emerald-400 to-teal-400 bg-clip-text text-transparent">
-                  Take Trade
-                </span>
-              </h2>
-              <p className="text-xl text-slate-300 leading-relaxed mb-8">
-                Buy using the Auto Trade FX Software automatic Robot Software
-              </p>
-            </div>
-
             {/* Features List */}
             <div className="space-y-4">
+              <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+                Built for Everyone
+              </h2>
               {features.map((feature, index) => (
                 <div key={index} className="flex items-start space-x-3">
                   <div className="flex-shrink-0 w-6 h-6 bg-emerald-500/20 rounded-full flex items-center justify-center mt-0.5">
@@ -52,6 +37,23 @@ export default function RobotAnalyze() {
                   <p className="text-slate-300 leading-relaxed">{feature}</p>
                 </div>
               ))}
+            </div>
+
+            {/* What Makes Us Different */}
+            <div className="pt-10 space-y-6">
+              <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+                What Makes Us Different
+              </h2>
+              <div className="space-y-4">
+                {differences.map((item, index) => (
+                  <div key={index} className="flex items-start space-x-3">
+                    <div className="flex-shrink-0 w-6 h-6 bg-emerald-500/20 rounded-full flex items-center justify-center mt-0.5">
+                      <Check className="w-4 h-4 text-emerald-400" />
+                    </div>
+                    <p className="text-slate-300 leading-relaxed">{item}</p>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
 

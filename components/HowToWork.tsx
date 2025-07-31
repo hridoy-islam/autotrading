@@ -5,19 +5,26 @@ import Image from "next/image";
 
 export default function HowToWork() {
   const features = [
-    "Fully Automatic , Setup once and the rest on Autopilot",
-    "The most popular forex robots are offered via the MetaTrader 4 platform.",
-    "Open and Close trade Automatically",
-    "Forex robots do not make order entry errors",
-    "Eliminates Human Emotions such as fear and greed",
-    "Our EA are coming with money management features and risk management",
-    "Forex robots do not get tired",
-    "3 Years on testing ( recently decided to sale for public)",
-    "Analysis of market data with 12 inner indicators",
-    "No Risky Strategies - No Martingale",
-    "Profit Average Method",
-    "Trades the Forex Market 24/5 (day and night)",
-    "24 Hours Support with Day & Night Shift",
+    {
+      title: "Install the Bot",
+      description:
+        "Our team sets up your trading environment with a VPS for stable performance.",
+    },
+    {
+      title: "Connect Your Account",
+      description:
+        "We sync your broker account for seamless execution across major forex pairs.",
+    },
+    {
+      title: "Let It Run",
+      description:
+        "The robot monitors, trades, and adapts—24/7—based on real market conditions and indicators.",
+    },
+    {
+      title: "Track Your Profits",
+      description:
+        "Check your dashboard anytime. The bot does the work. You keep the gains.",
+    },
   ];
 
   return (
@@ -28,32 +35,36 @@ export default function HowToWork() {
           <div className="space-y-8">
             <div>
               <div className="inline-flex items-center justify-center bg-slate-700/50 rounded-full px-4 py-2 mb-6">
-                <span className="text-emerald-400 font-medium">Work</span>
+                <span className="text-emerald-400 font-medium">
+                  How It Works
+                </span>
               </div>
               <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-                How Does{" "}
+                From Install to{" "}
                 <span className="bg-gradient-to-r from-emerald-400 to-teal-400 bg-clip-text text-transparent">
-                  Auto Trade FX Software
+                  Income — Simple
                 </span>{" "}
-                Robot Work?
+                & Powerful
               </h2>
-              <p className="text-xl text-slate-300 leading-relaxed mb-8">
-                A Forex Auto Trade FX Robot that works as a fully Automated
-                Forex Trading System that executes both Buy, Sell Trade
-                Automatically & Close the Trade in Profit. Auto Trade FX
-                Software is programmed to adapt to the current market conditions
-                as it executes trades on both sides of the market 24/7.
-              </p>
             </div>
 
             {/* Features List */}
+
             <div className="space-y-4">
               {features.map((feature, index) => (
                 <div key={index} className="flex items-start space-x-3">
                   <div className="flex-shrink-0 w-6 h-6 bg-emerald-500/20 rounded-full flex items-center justify-center mt-0.5">
                     <Check className="w-4 h-4 text-emerald-400" />
                   </div>
-                  <p className="text-slate-300 leading-relaxed">{feature}</p>
+                  <div>
+                    <h3 className="text-xl font-bold text-white mb-4 group-hover:text-emerald-400 transition-colors">
+                      {feature.title}
+                    </h3>
+
+                    <p className="text-slate-300 leading-relaxed">
+                      {feature.description}
+                    </p>
+                  </div>
                 </div>
               ))}
             </div>

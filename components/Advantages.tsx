@@ -6,45 +6,44 @@ import {
   Clock,
   Eye,
   Headphones,
+  Brain,
+  BriefcaseBusiness,
+  MonitorSmartphone,
+  LockKeyholeOpen,
+  Globe,
 } from "lucide-react";
 
 export default function Advantages() {
   const advantages = [
     {
-      icon: <Settings className="w-8 h-8 text-emerald-400" />,
-      title: "One Time Setup",
+      icon: <Brain className="w-8 h-8 text-emerald-400" />,
+      title: "AI That Thinks Like a Pro",
       description:
-        "(As once you avail our software our team will install the EA software for automated trading in your system or in VPS. as our team will guide and support you till start to get your profit.)",
+        "Our system reacts to market changes in real-time, scanning data and placing trades faster than any human ever could.",
     },
     {
-      icon: <Monitor className="w-8 h-8 text-emerald-400" />,
-      title: "Smooth Experience on any Device",
+      icon: <BriefcaseBusiness className="w-8 h-8 text-emerald-400" />,
+      title: "Set It & Forget It",
       description:
-        "The custom- built trading platform has been adapted for all devices you may choose and switching is mobile, Computer Etc., Easy withdrawal in any time with any Device.",
+        "Once installed, the robot handles everything—entry, exit, stop-loss, and profit taking—with no ongoing work required from you.",
     },
     {
-      icon: <GraduationCap className="w-8 h-8 text-emerald-400" />,
-      title: "Zero Trading Knowledge Required",
+      icon: <MonitorSmartphone className="w-8 h-8 text-emerald-400" />,
+      title: "Works Across All Devices",
       description:
-        "The custom- built trading platform has been adapted for all devices you may choose and switching is mobile, Computer Etc., Easy withdrawal in any time with any Device.",
+        "Whether you prefer your phone, laptop, or tablet, Auto Trade FX fits your lifestyle.",
     },
     {
-      icon: <Clock className="w-8 h-8 text-emerald-400" />,
-      title: "Start Trading in 24 Hours",
+      icon: <LockKeyholeOpen className="w-8 h-8 text-emerald-400" />,
+      title: "Risk Managed by Default",
       description:
-        "Once your setup is completed, your trade will start and you can see your daily profits.",
+        "Every trade is guided by pre-programmed logic and safety nets to protect your capital.",
     },
     {
-      icon: <Eye className="w-8 h-8 text-emerald-400" />,
-      title: "Zero Monitoring",
+      icon: <Globe className="w-8 h-8 text-emerald-400" />,
+      title: "Always On, Always Profiting",
       description:
-        "As our client no need to watch the market, as our EA software will trade by itself with most profitable strategy.",
-    },
-    {
-      icon: <Headphones className="w-8 h-8 text-emerald-400" />,
-      title: "Dedicated Expert Support",
-      description:
-        "24/7 expert analysers monitor your Auto Trade for Entire Period with Day & Night Shift.",
+        "Trade day or night, across global markets, with zero downtime—even while you sleep.",
     },
   ];
 
@@ -54,10 +53,12 @@ export default function Advantages() {
         {/* Header */}
         <div className="text-center mb-16">
           <div className="inline-flex items-center justify-center bg-slate-700/50 rounded-full px-4 py-2 mb-6">
-            <span className="text-emerald-400 font-medium">Advantages</span>
+            <span className="text-emerald-400 font-medium">
+              Why Choose Auto Trade FX?
+            </span>
           </div>
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
-            What you are getting from us
+            We Handle the Trades — You Watch the Profits
           </h2>
         </div>
 

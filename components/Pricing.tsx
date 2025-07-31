@@ -1,34 +1,39 @@
 "use client";
-import { Check, TrendingUp } from "lucide-react";
+import { Check, Headset, Shield, TrendingUp, Zap } from "lucide-react";
 import { Button } from "./ui/button";
 import Link from "next/link";
 
 export default function Pricing() {
   const plans = [
     {
-      title: "Basic Setup",
+      title: "Starter Plan — Get Up and Running",
       icon: <TrendingUp className="w-6 h-6 text-emerald-400" />,
       features: [
-        "Trading Robot Installation",
-        "Broker Account Configuration",
-        "️VPS Integration",
-        "Lifetime Software Access",
-        "24/7 Monitoring",
+        "Auto Trade FX Robot Installation",
+        "Single Broker Account Configuration",
+        "Secure VPS Integration",
+        "Dedicated Account Manager",
+        "24/7 Trading Monitor Access",
+        "Lifetime Updates & Support",
       ],
+      description: "Perfect for new traders or single-account users.",
       popular: false,
+      btntext: "Book My Setup",
     },
     {
-      title: "Premium Plan",
+      title: "Pro Plan — Scale with Confidence",
       icon: <TrendingUp className="w-6 h-6 text-emerald-400" />,
       features: [
-        "Multiple account Setup",
-        "Buy & Sell Indicator",
-        "Dedicated Account Manager",
-        "Free Trading Signals",
-        "Full VPS & Broker Support",
-        "Lifetime Updates & Help",
+        "Multi-Account Integration",
+        "Buy/Sell Signal Tools",
+        "Access to Free Trading Signals",
+        "Advanced Trade Indicators",
+        "Personalized Performance Optimization",
       ],
+      description:
+        "Ideal for advanced users managing multiple accounts or scaling trades.",
       popular: true,
+      btntext: "Upgrade to Pro",
     },
   ];
 
@@ -43,15 +48,20 @@ export default function Pricing() {
             </span>
           </div>
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
-            Simple, One-Time Setup.{" "}
+            One-Time Setup.{" "}
             <span className="bg-gradient-to-r from-emerald-400 to-teal-400 bg-clip-text text-transparent">
               Lifetime Value.
             </span>{" "}
           </h2>
+          <p className="text-lg text-slate-300 leading-relaxed mx-auto max-w-2xl">
+            Let our team take care of the heavy lifting—from installation to
+            full automation. You enjoy long-term trading gains without worrying
+            about updates, maintenance, or renewals.
+          </p>
         </div>
 
         {/* Pricing Cards */}
-        <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+        <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
           {plans.map((plan, index) => (
             <div
               key={index}
@@ -76,6 +86,7 @@ export default function Pricing() {
                     {plan.title}
                   </h3>
                 </div>
+                <p>{plan.description}</p>
               </div>
 
               {/* Features */}
@@ -102,7 +113,7 @@ export default function Pricing() {
                       : "bg-slate-700 hover:bg-slate-600 text-white"
                   }`}
                 >
-                  Choose My Plan
+                  {plan.btntext}
                 </Button>
               </Link>
             </div>

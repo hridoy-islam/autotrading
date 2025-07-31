@@ -103,7 +103,10 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <h3 className="text-white font-semibold mb-2">Phone</h3>
-                    <a className="text-emerald-400 hover:text-emerald-300 transition-colors">
+                    <a
+                      href="tel:+971528404824"
+                      className="text-emerald-400 hover:text-emerald-300 transition-colors"
+                    >
                       +971 52 840 4824
                     </a>
                   </div>
@@ -118,8 +121,8 @@ export default function ContactPage() {
                       Business Hours
                     </h3>
                     <div className="text-slate-300 space-y-1">
-                      <p>Mon - Fri: 10:00AM - 06:00PM</p>
-                      <p>Saturday: 10:00AM - 05:00PM</p>
+                      <p>Mon - Fri: 09:00AM - 06:00PM</p>
+                      <p>Saturday: 09:00AM - 05:00PM</p>
                       <p>Sunday : Closed</p>
                     </div>
                   </div>

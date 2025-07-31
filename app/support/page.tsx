@@ -74,7 +74,10 @@ export default function SupportPage() {
                   </h4>
                   <div className="flex items-center space-x-2">
                     <Phone className="w-5 h-5 text-emerald-400" />
-                    <a className="text-emerald-400 hover:text-emerald-300 transition-colors">
+                    <a
+                      href="tel:+971528404824"
+                      className="text-emerald-400 hover:text-emerald-300 transition-colors"
+                    >
                       +971 52 840 4824
                     </a>
                   </div>
